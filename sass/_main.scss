@@ -1,0 +1,495 @@
+//SAJ Sass Styles
+
+$oswald : 'Oswald', sans-serif;
+$droid : 'Droid Serif', serif;
+$blue : #2d96d8;
+
+//mixin
+
+@mixin titles($title-size) {
+		    font-family: $oswald;
+			font-weight: 700;
+			color: #5c5c5c;
+			font-size: $title-size;
+			padding:0px 0px 20px 0px;
+			line-height: 40px;	
+}
+
+	
+
+//transition everything
+* {
+	 transition: all 0.5s ease;
+}
+
+
+// main body styles
+body{
+
+	h1, .nav a{
+		@include titles(24px);
+	}
+	h2{
+		@include titles(18px);
+		padding:0px 0px 0px 0px;
+		@media only screen and (max-width: $medium-screen) {
+			padding-bottom:0px;
+		}
+	}
+	.nav a{font-size: 15px; font-weight:400;}
+	p, a {
+		font-family: $droid;
+		font-size: 15px;
+		color: #4d4d4d;
+		line-height: 25px;
+		padding:0px 0px 20px 0px;
+		max-width: 900px;
+	}
+	a{
+		text-decoration: none;
+		color:$blue;
+		&:hover{
+			color: lighten( $blue, 20% );
+		}
+	}
+}
+
+
+// header - logo and navigation
+.nav-header {
+	position:relative;
+	background: linear-gradient(to bottom, $blue 0%,darken($blue, 20%) 100%);
+	height:120px;
+	.logo {
+		display:block;
+		position:absolute;
+		top:30px;
+		left:50px;
+		@media only screen and (max-width: $medium-screen) {
+			left:25px;
+		}
+		img{
+			width: 150px;
+		}
+		
+	}
+	.nav {
+		position:relative;
+		display:block;
+		float: right;
+		margin: 25px 50px 25px 0px;
+		ul{
+			@media only screen and (max-width: $navbreak) {
+				padding-top:25px;
+			}
+			
+			li{
+				display: inline-block;
+				width: auto;
+				@media only screen and (max-width: $navbreak) {
+					display: block;
+				}
+				a{
+					display: block;
+					color: #fff;
+					text-decoration: none;
+					margin: 0px 5px;
+					padding:0px 0px 0px 0px;
+					&:hover{
+						border-bottom: 3px white solid;
+					}
+					&.selected{
+						border-bottom: 3px white solid;
+					}
+					@media only screen and (max-width: $navbreak) {
+					display: block;
+					text-align: center;
+					padding:15px;
+					margin: 0px;
+						&:hover, &.selected{
+						background: lighten( $blue, 20% );
+						border-bottom: none;
+  						padding:15px;
+						}
+					}
+				}
+			}
+		}
+		@media only screen and (max-width: $navbreak) {
+			z-index: 9997;
+			position:fixed;
+			top: 0;
+			right: -102%;
+			float: none;
+			height: 100%;
+			width: 100%;
+			background:$blue;
+			-webkit-box-shadow: 0 0 5px 5px #0c4061;
+			box-shadow: 0 0 5px 5px #0c4061;
+			margin: 0px;
+		}
+
+	}
+	.nav-active{
+	right: 0px;
+	}
+}
+
+//hamburger menu 
+.bun {
+	display:none;
+}
+
+
+@media only screen and (max-width: $navbreak) {
+.bun{
+	z-index: 9998;
+	display: block;
+	position: absolute;
+	left: -70px;
+  	top: 35px;
+  	height: 48px;
+	width: 44px;
+	padding:10px;
+	background:#2c8dcc;
+	border-radius:50%;
+	cursor:pointer;
+}
+.burger {
+	  position:relative;
+	  z-index: 9999;
+	  display: block;
+	  cursor: pointer;
+	  height: 24px;
+	  width: 24px;
+	  span{
+		  border-radius: 5px; 
+		  display: block; 
+		  background: #fff; 
+		  height: 4px; 
+		  width: 24px; 
+		  position: absolute;
+		  &:nth-child(1){
+			  top:0px;
+		  }
+		  &:nth-child(2){
+			  top:12px;
+		  }
+		  &:nth-child(3){
+			  top:24px;
+		  }
+	  }
+	}
+	
+	
+	.transparent { opacity: 0; }
+	.rotate-top { transform: rotatez(45deg); -webkit-transform-origin: 0%; transform-origin: 0%; width: 35px!important;  }
+	.rotate-bottom { transform: rotatez(-45deg); -webkit-transform-origin: 5%; transform-origin: 3%; width: 35px!important;  }
+
+}
+
+.bun-close {
+	left:15px;
+	background:#e65300;
+}
+
+// Main Banner
+
+.main-banner, .project-banner {
+	position:relative;
+	text-align:center;
+	img{
+		width: 100%;
+		max-height: 400px;
+	}
+} 
+
+.project-banner {
+	img{
+		width: 100%;
+		max-height: 300px;
+	}
+}
+
+// Slide Banner
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+	  li {
+	  -webkit-backface-visibility: hidden;
+	  position: absolute;
+	  display: none;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	  	&:first-child{
+	  		position: relative;
+			  display: block;
+			  float: left;
+
+	  	}
+	  }
+	  img {
+	  display: block;
+	  height: auto;
+	  float: left;
+	  width: 100%;
+	  border: 0;
+	  }
+  }
+
+// Tagline
+
+.main-tagline {
+	position:relative;
+	background:#2e2e2e;
+	padding:20px 50px;
+	@media only screen and (max-width: $medium-screen) {
+			 padding: 20px 25px;
+		  }
+	p, a{
+		font-family:$oswald;
+		color: #fff;
+		padding:0px;
+	}
+	a {
+		color: $blue;
+	}
+	.readme{
+		  display: block;
+		  position: absolute;
+		  left: 0;
+		  bottom: -20px;
+		  height: 20px;
+		  width: 100%;
+		  text-align: center;
+		  background-color: #eee;
+	}
+	.readmore{
+		  display: block;
+		  position: absolute;
+		  /* margin: 0px auto; */
+		  /* bottom: -20px; */
+		  left: 60px;
+		  right: 0px;
+		  width: 0px;
+		  height: 0px;
+		  border-left: 20px solid transparent;
+		  border-right: 20px solid transparent;
+		  border-top: 20px solid #2e2e2e;
+		  //z-index: 99;
+		  @media only screen and (max-width: $medium-screen) {
+			left: 20px;
+		  }
+	}
+	.tagbreak {
+		display: none;
+		 @media only screen and (max-width: $medium-screen) {
+			display: block;
+		  }
+	}
+}
+
+// Main Content
+
+.main-content {
+	padding: 40px 30px;
+	@media only screen and (max-width: $medium-screen) {
+		padding:25px;
+	}
+}
+
+// Center Content
+.centered {
+	margin: 0px auto;
+  	max-width: 1500px;
+}
+
+
+// General Columns
+.general-columns {
+	  padding: 0px 20px 0px;
+	   @media only screen and (max-width: $medium-screen) {
+	  	padding: 0px 0px 20px;
+	  }
+	  img{
+	  	width: 100%;
+	  	margin: 5px 0px 25px;
+	  }
+	  .main-cta, .secondary-cta {
+			position:relative;
+			display: inline-block;
+			font-family: $oswald;
+			font-size: 14px;
+			color: #ffffff;
+			text-decoration: none;
+			padding: 10px 35px 10px 20px;
+			border-radius: 3px;
+			background: #2d96d9;
+			text-transform: uppercase;
+			span{
+				  position: absolute;
+				  display: block;
+				  top: 8px;
+				  right: 9px;
+			}
+			&:hover{
+			color: #ffffff;
+			background: #000;
+			span{
+				right: 4px;
+			}
+			}
+		}
+		.secondary-cta {
+			background:#444;
+			margin-left: 10px;
+		}
+}
+
+
+// Project Page
+
+.project-wrapper {
+	padding:0px 10px 0px;
+		@media only screen and (max-width: $medium-screen) {
+	  	padding: 0px 0px 20px;
+	  }
+	}
+
+.project-wrap {
+	.project-holder {
+		display:block;
+		position:relative;
+		background: url("../imgs/projects/project.jpg") no-repeat;
+		background-size:cover;
+		background-position:center;
+		height:250px;
+		margin: 0.5em;
+		overflow: hidden;
+		@media only screen and (max-width: $medium-screen) {
+	  	margin: 0.5em 0em ;
+	    }
+		.project-texttop, .project-text {
+			display: block;
+			width: 100%;
+			position: absolute;
+			bottom:-100px;
+			text-align:center;
+			background:#2a90d1;
+			padding:20px 0px;
+			span {
+				position:absolute;
+				top: 35%;
+				right: 10%;
+
+			}
+			h2, p {
+				color: #fff;
+				padding:0px;
+				line-height: 25px;
+			}
+		}
+		.project-texttop {
+			bottom:200px;
+			padding:14px 0px;
+		}
+		&:hover{
+			.project-text, .project-texttop {
+				bottom: 0px;
+			}
+
+		}
+		}
+	}
+
+//services page
+
+ul.services {
+	list-style-type: square;
+	list-style-position: inside;
+	padding:0px 0px 40px;
+	@media only screen and (max-width: $medium-screen) {
+	  		padding: 0px 0px 0px;
+	  	}
+	li{
+		padding:5px 0px;
+		font-family: $droid;
+		font-size: 15px;
+		color: #4d4d4d;
+		line-height: 25px;
+	}
+
+}
+
+@media only screen and (max-width: $medium-screen) {
+	ul.s-last{
+	  	padding:0px 0px 40px;
+	 }
+}
+
+//clients page
+
+ul.clients-list {
+	padding:10px 0px 30px;
+	li{
+		a{
+			display: block;
+			float: left;
+  			padding: 10px;
+  			margin: 0px 5px 5px 0px;
+ 			background: #eee;
+  			text-align: center;
+  			color: #4d4d4d;
+			font-family: $oswald;
+			font-size: 14px;
+			cursor: default;
+			&:hover{
+				background: #000;
+				color: #fff;
+			}
+		}
+
+	}
+}
+
+
+// Footer
+
+footer {
+	background:#eee;
+	padding: 40px 30px;
+	section {
+		padding:0px 20px 0px;
+		@media only screen and (max-width: $medium-screen) {
+	  		padding: 0px 0px 20px;
+	  	}
+		h1{
+			font-family: $oswald;
+			font-weight: 700;
+			font-size: 15px;
+			line-height: 25px;
+			color: #4d4d4d;
+			padding-bottom:15px;
+			text-transform: uppercase;
+		}
+		p, a{
+			font-size: 14px;
+		}
+		p {
+			color: #4d4d4d;
+		}
+		.copyright {
+			border-top: 1px #d1d1d1 solid;
+  			padding-top: 15px;
+  			max-width: 100%;
+		}
+
+	}
+}
+
