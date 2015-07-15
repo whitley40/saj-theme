@@ -877,19 +877,39 @@ body a:hover {
   bottom: 0px;
 }
 
-/* line 488, sass/_main.scss */
+/* line 487, sass/_main.scss */
+ul.project-links {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 490, sass/_main.scss */
+ul.project-links li {
+  display: block;
+  float: left;
+  margin: 0px 10px;
+}
+/* line 494, sass/_main.scss */
+ul.project-links li a {
+  margin-left: 0px!important;
+}
+/* line 498, sass/_main.scss */
+ul.project-links li:first-child {
+  margin-left: 0px;
+}
+
+/* line 505, sass/_main.scss */
 ul.services {
   list-style-type: square;
   list-style-position: inside;
   padding: 0px 0px 40px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 488, sass/_main.scss */
+  /* line 505, sass/_main.scss */
   ul.services {
     padding: 0px 0px 0px;
   }
 }
-/* line 495, sass/_main.scss */
+/* line 512, sass/_main.scss */
 ul.services li {
   padding: 5px 0px;
   font-family: "Droid Serif", serif;
@@ -899,16 +919,16 @@ ul.services li {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 506, sass/_main.scss */
+  /* line 523, sass/_main.scss */
   ul.s-last {
     padding: 0px 0px 40px;
   }
 }
-/* line 513, sass/_main.scss */
+/* line 532, sass/_main.scss */
 ul.clients-list {
   padding: 10px 0px 30px;
 }
-/* line 516, sass/_main.scss */
+/* line 535, sass/_main.scss */
 ul.clients-list li a {
   display: block;
   float: left;
@@ -921,28 +941,28 @@ ul.clients-list li a {
   font-size: 14px;
   cursor: default;
 }
-/* line 527, sass/_main.scss */
+/* line 546, sass/_main.scss */
 ul.clients-list li a:hover {
   background: #000;
   color: #fff;
 }
 
-/* line 539, sass/_main.scss */
+/* line 558, sass/_main.scss */
 footer {
   background: #eee;
   padding: 40px 30px;
 }
-/* line 542, sass/_main.scss */
+/* line 561, sass/_main.scss */
 footer section {
   padding: 0px 20px 0px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 542, sass/_main.scss */
+  /* line 561, sass/_main.scss */
   footer section {
     padding: 0px 0px 20px;
   }
 }
-/* line 547, sass/_main.scss */
+/* line 566, sass/_main.scss */
 footer section h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -952,15 +972,15 @@ footer section h1 {
   padding-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 556, sass/_main.scss */
+/* line 575, sass/_main.scss */
 footer section p, footer section a {
   font-size: 14px;
 }
-/* line 559, sass/_main.scss */
+/* line 578, sass/_main.scss */
 footer section p {
   color: #4d4d4d;
 }
-/* line 562, sass/_main.scss */
+/* line 581, sass/_main.scss */
 footer section .copyright {
   border-top: 1px #d1d1d1 solid;
   padding-top: 15px;

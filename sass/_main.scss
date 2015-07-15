@@ -483,6 +483,23 @@ body{
 		}
 	}
 
+
+ul.project-links{
+	margin:0px;
+	padding:0px;
+		li {
+			display: block;
+			float: left;
+			margin: 0px 10px;
+			a{
+				margin-left: 0px!important;
+			}
+		}
+		li:first-child {
+			margin-left: 0px;
+		}
+}
+
 //services page
 
 ul.services {
@@ -507,6 +524,8 @@ ul.services {
 	  	padding:0px 0px 40px;
 	 }
 }
+
+
 
 //clients page
 

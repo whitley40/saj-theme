@@ -35,7 +35,7 @@
 		<?php the_field('project-conclusion'); ?>
 		<!-- <?php previous_post_link(); ?> add this in to link between projects-->
 		
-		<ul>
+		<ul class="project-links">
 		<li><a class="main-cta" href="<?php bloginfo('url'); ?>/contact">Get in touch <span>&#9658;</span></a></li>
 		<li><a class="secondary-cta" href="<?php bloginfo('url'); ?>/projects/">Back to projects </a></li>
 			<li><a class="main-cta" href="<?php bloginfo('url'); ?>/contact">Download PDF<span>&#9658;</span></a></li>
