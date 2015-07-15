@@ -17,25 +17,19 @@
 
 	<header class="large-12 general-columns">
 		 <h1><?php the_title(); ?> </h1>
-		 <?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 		 <?php the_field('about-intro'); ?>
-		 <?php endwhile;  endif; wp_reset_postdata(); ?>
 	</header>
 
 	<section class="general-columns large-6 medium-12">
 
-	<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 	<?php the_field('team-title'); ?>
-	<?php the_field('team-image'); ?>	
+	<img src='<?php the_field('team-image'); ?>' width="100%">
 	<?php the_field('team-intro'); ?>
-	<?php endwhile;  endif; wp_reset_postdata(); ?>
 
 	</section>
 
 	<section class="general-columns large-6 medium-12">
-	<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 	<?php the_field('about-content'); ?>
-	<?php endwhile;  endif; wp_reset_postdata(); ?>	
 	</section>
 
 	</div>

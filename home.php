@@ -38,15 +38,30 @@
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 
 			<?php if ( get_field($home_slide_one) ) { ?>
-			<li><img src="<?php the_field('home-slide-one'); ?>"></li>
+			<li>
+			<a class="main-cta" href="http://localhost/wordpress/projects/">View Our Projects <span>►</span></a>
+			<a href="http://localhost/wordpress/projects/">
+			<img src="<?php the_field('home-slide-one'); ?>">
+			</a>
+			</li>
 			<?php } ?>
 
 			<?php if ( get_field($home_slide_two) ) { ?>
-			<li><img src="<?php the_field('home-slide-two'); ?>"></li>
+			<li>
+			<a class="main-cta" href="http://localhost/wordpress/services/">View Our Services <span>►</span></a>
+			<a href="http://localhost/wordpress/services/">
+			<img src="<?php the_field('home-slide-two'); ?>">
+			</a>
+			</li>
 			<?php } ?>
 
 			<?php if ( get_field($home_slide_three) ) { ?>
-			<li><img src="<?php the_field('home-slide-three'); ?>"></li>
+			<li>
+			<a class="main-cta" href="http://localhost/wordpress/services/">View Our Clients <span>►</span></a>
+			<a href="http://localhost/wordpress/clients/">
+			<img src="<?php the_field('home-slide-three'); ?>">
+			</a>
+			</li>
 			<?php } ?>
 		  
 		  	<?php endwhile;  endif; wp_reset_postdata(); ?>
