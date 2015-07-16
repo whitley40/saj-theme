@@ -39,8 +39,8 @@
 
 			<?php if ( get_field($home_slide_one) ) { ?>
 			<li>
-			<a class="main-cta" href="http://localhost/wordpress/projects/">View Our Projects <span>►</span></a>
-			<a href="http://localhost/wordpress/projects/">
+			<a class="main-cta" href="<?php bloginfo('url'); ?>/projects/">View Our Projects <span>►</span></a>
+			<a href="<?php bloginfo('url'); ?>/projects/">
 			<img src="<?php the_field('home-slide-one'); ?>">
 			</a>
 			</li>
@@ -48,8 +48,8 @@
 
 			<?php if ( get_field($home_slide_two) ) { ?>
 			<li>
-			<a class="main-cta" href="http://localhost/wordpress/services/">View Our Services <span>►</span></a>
-			<a href="http://localhost/wordpress/services/">
+			<a class="main-cta" href="<?php bloginfo('url'); ?>/services/">View Our Services <span>►</span></a>
+			<a href="<?php bloginfo('url'); ?>/services/">
 			<img src="<?php the_field('home-slide-two'); ?>">
 			</a>
 			</li>
@@ -57,8 +57,8 @@
 
 			<?php if ( get_field($home_slide_three) ) { ?>
 			<li>
-			<a class="main-cta" href="http://localhost/wordpress/services/">View Our Clients <span>►</span></a>
-			<a href="http://localhost/wordpress/clients/">
+			<a class="main-cta" href="<?php bloginfo('url'); ?>/services/">View Our Clients <span>►</span></a>
+			<a href="<?php bloginfo('url'); ?>/clients/">
 			<img src="<?php the_field('home-slide-three'); ?>">
 			</a>
 			</li>

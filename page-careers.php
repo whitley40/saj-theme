@@ -10,7 +10,7 @@
 
 	<header class="large-12 general-columns">
 		 <h1><?php the_title(); ?></h1>
-		 <p>Check out our latest opportunities below. Or return to <a href=" http://localhost/wordpress/about/">about us.</a></p>
+		 <p>Check out our latest opportunities below. Or return to <a href="<?php bloginfo('url'); ?>/about/">about us.</a></p>
 	</header>
 
 	<!-- Jobs -->

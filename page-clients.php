@@ -79,7 +79,7 @@
 	</section>
 
 	<section class="large-12 general-columns">
-		 <a class="main-cta" href="#">Become a client <span>&#9658;</span></a>
+		 <a class="main-cta" href="<?php bloginfo('url'); ?>/clients/">Become a client <span>&#9658;</span></a>
 	</section>
 
 

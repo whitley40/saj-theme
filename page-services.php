@@ -54,7 +54,7 @@
 	</section>
 
 	<section class="general-columns large-12">
-	<a class="main-cta" href="#">Find out more information <span>&#9658;</span></a>
+	<a class="main-cta" href="<?php bloginfo('url'); ?>/contact/">Find out more information <span>&#9658;</span></a>
 	</section>
 			
 
