@@ -39,8 +39,8 @@
 
 			<?php if ( get_field($home_slide_one) ) { ?>
 			<li>
-			<a class="main-cta" href="<?php bloginfo('url'); ?>/projects/">View Our Projects <span>►</span></a>
-			<a href="<?php bloginfo('url'); ?>/projects/">
+			<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">View Our <?php the_field('slide-one-page'); ?> <span>►</span></a>
+			<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">
 			<img src="<?php the_field('home-slide-one'); ?>">
 			</a>
 			</li>
@@ -48,8 +48,8 @@
 
 			<?php if ( get_field($home_slide_two) ) { ?>
 			<li>
-			<a class="main-cta" href="<?php bloginfo('url'); ?>/services/">View Our Services <span>►</span></a>
-			<a href="<?php bloginfo('url'); ?>/services/">
+			<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">View Our <?php the_field('slide-two-page'); ?> <span>►</span></a>
+			<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">
 			<img src="<?php the_field('home-slide-two'); ?>">
 			</a>
 			</li>
@@ -57,8 +57,8 @@
 
 			<?php if ( get_field($home_slide_three) ) { ?>
 			<li>
-			<a class="main-cta" href="<?php bloginfo('url'); ?>/services/">View Our Clients <span>►</span></a>
-			<a href="<?php bloginfo('url'); ?>/clients/">
+			<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">View Our <?php the_field('slide-three-page'); ?> <span>►</span></a>
+			<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">
 			<img src="<?php the_field('home-slide-three'); ?>">
 			</a>
 			</li>
