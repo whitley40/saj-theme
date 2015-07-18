@@ -1,5 +1,11 @@
 <?php
 
+// control the length of the exerpt
+function saj_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'saj_excerpt_length', 999 );
+
 // add in menu support
 
 add_theme_support('menus');

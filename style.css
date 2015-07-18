@@ -947,22 +947,85 @@ ul.clients-list li a:hover {
   color: #fff;
 }
 
-/* line 558, sass/_main.scss */
+/* line 557, sass/_main.scss */
+.articlelist {
+  float: none;
+  margin: 0px auto;
+}
+
+/* line 564, sass/_main.scss */
+.general-columns .saj-article-item {
+  position: relative;
+  margin: 20px 0px 80px;
+}
+/* line 569, sass/_main.scss */
+.general-columns .article-link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #5c5c5c;
+  font-size: 22px;
+  padding: 0px 0px 20px 0px;
+  line-height: 40px;
+}
+/* line 573, sass/_main.scss */
+.general-columns .saj-article-time {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 10px;
+  font-style: italic;
+  padding: 0px;
+}
+/* line 582, sass/_main.scss */
+.general-columns .saj-article-thumb img {
+  max-height: 300px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+/* line 588, sass/_main.scss */
+.general-columns .saj-author-block {
+  margin-bottom: 15px;
+}
+/* line 591, sass/_main.scss */
+.general-columns .saj-avatar {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+/* line 597, sass/_main.scss */
+.general-columns .saj-avatar img {
+  margin: 5px 0px 0px;
+}
+/* line 602, sass/_main.scss */
+.general-columns .article-author {
+  display: block;
+  float: left;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+/* line 607, sass/_main.scss */
+.general-columns .article-author a {
+  font-size: 12px;
+}
+
+/* line 621, sass/_main.scss */
 footer {
   background: #eee;
   padding: 40px 30px;
 }
-/* line 561, sass/_main.scss */
+/* line 624, sass/_main.scss */
 footer section {
   padding: 0px 20px 0px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 561, sass/_main.scss */
+  /* line 624, sass/_main.scss */
   footer section {
     padding: 0px 0px 20px;
   }
 }
-/* line 566, sass/_main.scss */
+/* line 629, sass/_main.scss */
 footer section h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -972,15 +1035,15 @@ footer section h1 {
   padding-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 575, sass/_main.scss */
+/* line 638, sass/_main.scss */
 footer section p, footer section a {
   font-size: 14px;
 }
-/* line 578, sass/_main.scss */
+/* line 641, sass/_main.scss */
 footer section p {
   color: #4d4d4d;
 }
-/* line 581, sass/_main.scss */
+/* line 644, sass/_main.scss */
 footer section .copyright {
   border-top: 1px #d1d1d1 solid;
   padding-top: 15px;

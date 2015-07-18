@@ -552,6 +552,69 @@ ul.clients-list {
 	}
 }
 
+//articles page 
+
+.articlelist {
+	float:none;
+	margin:0px auto;
+}
+
+.general-columns{
+
+	.saj-article-item{
+		position:relative;
+		margin:20px 0px 80px;
+	}
+
+	.article-link {
+		@include titles(22px);
+	}
+
+	.saj-article-time {
+		position:absolute;
+		top:10px;
+		right: 5px;
+		font-size: 10px;
+		font-style: italic;
+		padding:0px;
+	}
+
+	.saj-article-thumb img {
+		max-height: 300px;
+		margin: 10px 0px;
+		border-radius:5px;
+	}
+
+	.saj-author-block {
+		margin-bottom: 15px;
+	}
+	.saj-avatar {
+		display:block;
+		float: left;
+		width:24px;
+		height:24px;
+		border-radius:50%;
+		img {
+			margin:5px 0px 0px;
+		}
+	}
+
+	.article-author{
+		display:block;
+		float: left;
+		margin-top: 6px;
+		margin-left: 10px;
+		a{
+			font-size: 12px;
+		}
+	}
+
+	
+	
+
+}
+
+
 
 // Footer
 
