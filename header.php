@@ -55,3 +55,10 @@
 
 		<!-- </div> -->
 	</header>
+
+	<!-- TAGLINE -->
+	<section class="main-tagline large-12">
+	<div class="centered group">
+		 <p>Sustainable transport solutions.&nbsp;Travel Planning, Strategic Masterplanning, Transport Assessment and more. &nbsp;<br class="tagbreak"> <a href="<?php bloginfo('url'); ?>/contact/">Contact us today!</a></p>
+		</div>
+	</section>
