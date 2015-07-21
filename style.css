@@ -982,17 +982,23 @@ ul.clients-list li a:hover {
   font-style: italic;
   padding: 0px;
 }
-/* line 585, sass/_main.scss */
+@media only screen and (max-width: 660px) {
+  /* line 576, sass/_main.scss */
+  .general-columns .saj-article-time {
+    position: initial;
+  }
+}
+/* line 588, sass/_main.scss */
 .general-columns .saj-article-thumb img {
   max-height: 300px;
   margin: 10px 0px;
   border-radius: 5px;
 }
-/* line 591, sass/_main.scss */
+/* line 594, sass/_main.scss */
 .general-columns .saj-author-block {
   margin-bottom: 15px;
 }
-/* line 594, sass/_main.scss */
+/* line 597, sass/_main.scss */
 .general-columns .saj-avatar {
   display: block;
   float: left;
@@ -1000,56 +1006,56 @@ ul.clients-list li a:hover {
   height: 24px;
   border-radius: 50%;
 }
-/* line 600, sass/_main.scss */
+/* line 603, sass/_main.scss */
 .general-columns .saj-avatar img {
   margin: 5px 0px 0px;
 }
-/* line 605, sass/_main.scss */
+/* line 608, sass/_main.scss */
 .general-columns .article-author {
   display: block;
   float: left;
   margin-top: 6px;
   margin-left: 10px;
 }
-/* line 610, sass/_main.scss */
+/* line 613, sass/_main.scss */
 .general-columns .article-author a {
   font-size: 12px;
 }
 
-/* line 619, sass/_main.scss */
+/* line 622, sass/_main.scss */
 .saj-article-content {
   float: none;
   margin: 0px auto;
 }
 
-/* line 624, sass/_main.scss */
+/* line 627, sass/_main.scss */
 .saj-article-header img {
   width: 100%;
 }
 
-/* line 628, sass/_main.scss */
+/* line 631, sass/_main.scss */
 .saj-blog-link {
   display: block;
   font-size: 10px;
   padding-bottom: 20px;
 }
 
-/* line 639, sass/_main.scss */
+/* line 642, sass/_main.scss */
 footer {
   background: #eee;
   padding: 40px 30px;
 }
-/* line 642, sass/_main.scss */
+/* line 645, sass/_main.scss */
 footer section {
   padding: 0px 20px 0px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 642, sass/_main.scss */
+  /* line 645, sass/_main.scss */
   footer section {
     padding: 0px 0px 20px;
   }
 }
-/* line 647, sass/_main.scss */
+/* line 650, sass/_main.scss */
 footer section h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -1059,15 +1065,15 @@ footer section h1 {
   padding-bottom: 15px;
   text-transform: uppercase;
 }
-/* line 656, sass/_main.scss */
+/* line 659, sass/_main.scss */
 footer section p, footer section a {
   font-size: 14px;
 }
-/* line 659, sass/_main.scss */
+/* line 662, sass/_main.scss */
 footer section p {
   color: #4d4d4d;
 }
-/* line 662, sass/_main.scss */
+/* line 665, sass/_main.scss */
 footer section .copyright {
   border-top: 1px #d1d1d1 solid;
   padding-top: 15px;

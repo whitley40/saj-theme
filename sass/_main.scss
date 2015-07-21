@@ -580,6 +580,9 @@ ul.clients-list {
 		font-size: 10px;
 		font-style: italic;
 		padding:0px;
+		@media only screen and (max-width: $navbreak) {
+			position:initial;
+		}
 	}
 
 	.saj-article-thumb img {
