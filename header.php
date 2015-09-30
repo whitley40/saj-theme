@@ -21,7 +21,7 @@
 
 <div class="wrapper">
 
-<!-- LOGO AND NAV HEAD BAR -->
+<!-- LOGO AND NAV HEAD BAR  -marks edits -->
 	<header class="nav-header large-12">
 
 	<!-- <div class="centered group"> -->
