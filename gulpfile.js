@@ -13,7 +13,7 @@ del = require('del');
 /* compiling the sass (with maps) */
 
 gulp.task('compileSass', function() {
-    return gulp.src('src/scss/styles.scss')
+    return gulp.src('src/scss/style.scss')
     .pipe(maps.init())
     .pipe(sass())
     .pipe(maps.write('../maps'))
