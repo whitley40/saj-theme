@@ -1,0 +1,40 @@
+//buttons
+
+.main-cta, .secondary-cta {
+    display:flex;
+    justify-content: space-inbetween;
+    font-family: $font-titles;
+    @include font-size(15px);
+    color: $saj-white;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background: $saj-blue;
+    text-transform: uppercase;
+    width: 100%;
+    //medium screens
+      @include bp-medium {
+        display:inline-block;
+         width:auto;
+      }
+    span{
+      margin-left: auto;
+      @include bp-medium {
+        margin-left: 0;
+        padding-left:30px;
+      }
+    }
+    &:hover{
+      background: #000;
+      color:lighten($saj-blue, 20%);
+      span{
+        padding-left: 40px;
+      //color:lighten( $saj-blue, 20% );
+      }
+    }
+  }
+  .secondary-cta {
+    background:$saj-dark-grey;
+  }
+
+

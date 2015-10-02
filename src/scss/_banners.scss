@@ -1,0 +1,102 @@
+//home and content banners 
+
+// Main Banner
+
+.main-banner, .project-banner {
+  display: flex;
+  flex-flow: row wrap;
+  padding:0px;
+  position:relative;
+  text-align:center;
+  img{
+    width: 100%;
+    max-height: 400px;
+  }
+} 
+
+.project-banner {
+  img{
+    width: 100%;
+    max-height: 300px;
+  }
+}
+
+// Sliding Banner - Homepage
+
+.rslides {
+  display: flex;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &:first-child{
+      position: relative;
+      display: block;
+      float: left;
+    }
+  }
+  img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    margin-bottom: 40px;
+    //medium screens
+      @include bp-medium {
+         margin-bottom: 0px;
+      }
+  }
+  .main-cta{
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    border-radius:0;
+      //medium screens
+      @include bp-medium {
+        width:auto;
+        //max-width: 250px;
+        //margin:0px auto;
+        //right:0px;
+        left:40px;
+        bottom:40px;
+        border-radius:5px;
+      }
+  }
+}
+
+.rslides_nav {
+  display: flex;
+  justify-content: center;
+  flex: 1 auto;
+  background:#eee;
+  padding:20px 20px;
+  color: #444;
+  font-family: $font-titles;
+  &:hover {
+    background:#2d96d8;
+    color: #fff;
+  }
+  &.prev{
+    &:after {
+      content:" Previous";
+      padding-left:10px;
+    }
+  }
+  &.next{
+    &:before {
+      content:"Next ";
+      padding-right:10px;
+    }
+  }
+
+}

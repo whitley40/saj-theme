@@ -1,0 +1,22 @@
+//single article page
+
+.saj-article-header{
+  padding:0px;
+   img {
+    width:100%;
+    height: auto;
+   }
+}
+
+.saj-article-content {
+  flex-flow: column;
+  max-width: 1200px;
+  margin:0px auto;
+}
+
+
+.saj-blog-link {
+  display: block;
+  font-size:10px;
+  padding-bottom:20px;
+}

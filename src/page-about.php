@@ -12,27 +12,31 @@
 			$query = new WP_Query( $args );
 		?>
 
-<section class="main-content large-12">
-	<div class="centered group">
+<section class="main-content">
 
-	<header class="large-12 general-columns">
+	<header>
 		 <h1><?php the_title(); ?> </h1>
 		 <?php the_field('about-intro'); ?>
 	</header>
 
-	<section class="general-columns large-6 medium-12">
+	<div class="content-col">
 
-	<?php the_field('team-title'); ?>
-	<img src='<?php the_field('team-image'); ?>' width="100%">
-	<?php the_field('team-intro'); ?>
-
-	</section>
-
-	<section class="general-columns large-6 medium-12">
-	<?php the_field('about-content'); ?>
-	</section>
+		<?php the_field('team-title'); ?>
+		<img src='<?php the_field('team-image'); ?>' >
+		<?php the_field('team-intro'); ?>
 
 	</div>
+
+	<div class="content-col">
+
+		<?php the_field('about-content'); ?>
+
+	</div>
+
+	<section class="content-cta">
+	<a class="main-cta" href="<?php bloginfo('url'); ?>/contact/">Get in touch with us today <span>&#9658;</span></a>
+	</section>
+
 </section>
 
 

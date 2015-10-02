@@ -1,0 +1,71 @@
+// Project Page
+
+.project-wrapper {
+  padding:0px 10px 0px;
+  @media only screen and (max-width: $medium-screen) {
+    padding: 0px 0px 20px;
+  }
+}
+
+.project-wrap {
+  .project-holder {
+    display:block;
+    position:relative;
+    background: url("../imgs/projects/project.jpg") no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:250px;
+    margin: 0.5em;
+    overflow: hidden;
+    @media only screen and (max-width: $medium-screen) {
+      margin: 0.5em 0em ;
+    }
+    .project-texttop, .project-text {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom:-100px;
+      text-align:center;
+      background:#2a90d1;
+      padding:20px 0px;
+      span {
+        position:absolute;
+        top: 35%;
+        right: 10%;
+
+      }
+      h2, p {
+        color: #fff;
+        padding:0px;
+        line-height: 25px;
+      }
+    }
+    .project-texttop {
+      bottom:200px;
+      padding:14px 0px;
+    }
+    &:hover{
+      .project-text, .project-texttop {
+        bottom: 0px;
+      }
+
+    }
+  }
+}
+
+
+ul.project-links{
+  margin:0px;
+  padding:0px;
+  li {
+    display: block;
+    float: left;
+    margin: 0px 10px;
+    a{
+      margin-left: 0px!important;
+    }
+  }
+  li:first-child {
+    margin-left: 0px;
+  }
+}

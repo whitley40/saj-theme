@@ -1,0 +1,27 @@
+//clients page
+
+.all-clients {
+  flex-flow:column;
+  flex: 1 100%;
+  padding:0px 40px 0px;
+  ul{
+    display:flex;
+    flex-flow: row wrap;
+    padding-bottom:20px;
+    //justify-content: space-between;
+    li{
+      display:flex;
+      margin: 0px 10px 10px 0px;
+    }
+    a{
+      padding:10px;
+      background:$saj-light-grey;
+      font-family: $font-titles;
+      color: $saj-dark-grey;
+      &:hover{
+        background:$saj-black;
+        color:$saj-white;
+      }
+    }
+  }
+}

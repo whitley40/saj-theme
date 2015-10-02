@@ -6,26 +6,12 @@ jQuery(document).ready(function($) {
 
 //Burger
 $('.bun').click(function(){
-  $('.burger span:nth-child(2)').toggleClass('transparent');
-  $('.burger span:nth-child(1)').toggleClass('rotate-top');
-  $('.burger span:nth-child(3)').toggleClass('rotate-bottom');
   $('.nav').toggleClass('nav-active');
   $('.bun').toggleClass('bun-close');
+  $('.burger').toggleClass('icon-menu');
+  $('.burger').toggleClass('icon-close');
+  $('body').toggleClass('no-scroll');
 });
-
-//menu - selected
-/*$(document).ready(function () {
-    $('.nav li a').click(function(e) {
-
-        $('.nav li a').removeClass('selected');
-
-        var $parent = $(this);
-        if (!$parent.hasClass('selected')) {
-            $parent.addClass('selected');
-        }
-        e.preventDefault();
-    });
-});*/
 
 //Slides
 

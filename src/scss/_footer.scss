@@ -1,0 +1,44 @@
+//footer styling
+
+// Footer
+
+footer {
+  display:flex;
+  flex-flow: column;
+  background:$saj-light-grey;
+      //medium screens
+      @include bp-medium {
+         flex-flow: row wrap;
+      }
+  section {
+    padding:0px;
+    flex-direction: column;
+    padding: 10px 40px;
+    //medium screens
+      @include bp-medium {
+        padding: 40px 40px;
+      }
+    h1{ 
+      @include font-size(20px);
+      margin: 0px 0px 10px; 
+    }
+    &.details{
+      padding-top:40px;
+    }
+    &.social{
+      padding-bottom:40px;
+      ul li{
+        padding:8px 0px;
+      }
+    }
+  }
+  .copyright{
+    padding: 40px 40px;
+    background:$saj-white;
+    flex:0 100%;
+    p{
+      @include font-size(12px);
+      margin-bottom:0px;
+    }
+  }
+}

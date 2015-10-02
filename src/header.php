@@ -21,25 +21,19 @@
 
 <div class="wrapper">
 
-<!-- LOGO AND NAV HEAD BAR  -marks edits -->
-	<header class="nav-header large-12">
-
-	<!-- <div class="centered group"> -->
+<!-- LOGO AND NAV HEAD BAR  -->
+	<header class="nav-header">
 		
 		<h1><a class="logo" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/imgs/logo.svg"></a></h1>
 		
 		<nav class="nav" role="nav">
 
 		<div class="bun">
-		<div class="burger">
-	    <span></span>
-	    <span></span>
-	    <span></span>
-	    </div>
-	    </div>
+			<div class="burger">
+		  </div>
+	  </div>
 
 	    <?php
-
 	    	$defaults = array(
 	    		'container' => false,
 	    		'theme_location' => 'primary-menu',
@@ -47,17 +41,13 @@
 	    		);
 
 	    	wp_nav_menu( $defaults );
-
 	    ?>
 		
 		</nav>
 
-		<!-- </div> -->
 	</header>
 
 	<!-- TAGLINE -->
-	<section class="main-tagline large-12">
-	<div class="centered group">
-		 <p>Sustainable transport solutions.&nbsp;Travel Planning, Strategic Masterplanning, Transport Assessment and more. &nbsp;<br class="tagbreak"> <a href="<?php bloginfo('url'); ?>/contact/">Contact us today!</a></p>
-		</div>
+	<section class="main-tagline">
+		 <p>Sustainable transport solutions. Travel Planning, Strategic Masterplanning, Transport Assessment and more. <a href="<?php bloginfo('url'); ?>/contact/">Contact us today!</a></p>
 	</section>

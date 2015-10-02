@@ -5,10 +5,9 @@
 ?>
 <?php get_header(); ?>
 
-<section class="main-content large-12">
-	<div class="centered group">
+<section class="main-content">
 
-	<header class="large-12 general-columns">
+	<header>
 		 <h1><?php the_title(); ?> </h1>
 		 <p>We work hard to ensure our clients get the quality product they deserve.</p>
 	</header>
@@ -23,8 +22,8 @@
 		?>
 
 
-	<section class="general-columns large-6 medium-12">
-		<h2 class="large-12">Our Clients Include</h2>
+	<section class="all-clients">
+		<h2>Our Clients Include:</h2>
 			
 
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
@@ -34,7 +33,7 @@
 			<?php endwhile;  endif; wp_reset_postdata(); ?>
 	
 
-		<h2 class="large-12">Architects</h2>
+		<h2>Architects</h2>
 
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 			
@@ -42,12 +41,9 @@
 
 			<?php endwhile;  endif; wp_reset_postdata(); ?>
 
-	</section>
-
-	<section class="general-columns large-6 medium-12">
 		
-		<h2 class="large-12">Consultants & Engineers</h2>
-		<ul class="clients-list large-12">
+		<h2>Consultants & Engineers</h2>
+		<ul class="clients-list">
 
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 			
@@ -56,8 +52,8 @@
 			<?php endwhile;  endif; wp_reset_postdata(); ?>
 
 		</ul>
-		<h2 class="large-12">Landscape Architects</h2>
-		<ul class="clients-list large-12">
+		<h2>Landscape Architects</h2>
+		<ul class="clients-list">
 
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 			
@@ -66,8 +62,8 @@
 			<?php endwhile;  endif; wp_reset_postdata(); ?>
 
 		</ul>
-		<h2 class="large-12">Planners</h2>
-		<ul class="clients-list large-12">
+		<h2>Planners</h2>
+		<ul class="clients-list">
 
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 			
@@ -78,12 +74,11 @@
 		</ul>
 	</section>
 
-	<section class="large-12 general-columns">
-		 <a class="main-cta" href="<?php bloginfo('url'); ?>/clients/">Become a client <span>&#9658;</span></a>
+	<section class="content-cta">
+		 <a class="main-cta" href="<?php bloginfo('url'); ?>/clients/">Start Collaborating with us Today!<span>&#9658;</span></a>
 	</section>
 
 
-	</div>
 </section>
 
 

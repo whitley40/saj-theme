@@ -5,22 +5,15 @@
 ?>
 <?php get_header(); ?>
 
-<section class="main-content large-12">
-	<div class="centered group">
+<section class="main-content">
 
-	<header class="large-12 general-columns">
+	<header>
 		 <h1><?php the_title(); ?> </h1>
+		 <?php the_field('service-description'); ?>
+		 <?php the_field('service-secondary-title'); ?>
 	</header>
 
-	<section class="general-columns large-12">
-		
-		<?php the_field('service-description'); ?>
-
-		<?php the_field('service-secondary-title'); ?>
-
-	</section>
-
-	<section class="general-columns large-12">
+	<section class="all-services">
 		
 		<?php
 		$args = array(
@@ -53,12 +46,11 @@
 
 	</section>
 
-	<section class="general-columns large-12">
+	<section class="content-cta">
 	<a class="main-cta" href="<?php bloginfo('url'); ?>/contact/">Find out more information <span>&#9658;</span></a>
 	</section>
 			
 
-	</div>
 </section>
 
 

@@ -1,0 +1,19 @@
+//taglines 
+
+.main-tagline {
+   padding: 20px 40px;
+   background:$saj-black;
+      //medium screens
+      @include bp-medium {
+        padding: 20px 40px;
+      }
+   p, a{
+     font-family:$font-titles;
+     color: #fff;
+     padding:0px;
+     margin:0px;
+   }
+   a {
+     color: $saj-blue;
+   }
+ }

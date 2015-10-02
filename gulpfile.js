@@ -14,9 +14,7 @@ del = require('del');
 
 gulp.task('compileSass', function() {
     return gulp.src('src/scss/style.scss')
-    .pipe(maps.init())
     .pipe(sass())
-    .pipe(maps.write('../maps'))
     .pipe(rename('style.css'))
     .pipe(gulp.dest('../wp-content/themes/saj-theme/'));
 });
