@@ -13,6 +13,29 @@ $('.bun').click(function(){
   $('body').toggleClass('no-scroll');
 });
 
+//Sorting projects
+
+$("input:radio[name=project-type]").click(function(){
+
+  var value = '.' + $(this).val();
+
+  // if single project is not equal to single project or single project with this particular value, hide
+
+  var project = $('.single-project');
+  var project_type =  $('.single-project' + value);
+
+  project.css('display', 'none');
+  project_type.css('display', 'flex');
+
+});
+
+$('.p-type').on('click', function(){
+    $('.p-type').removeClass('selected');
+    $(this).addClass('selected');
+});
+
+
+
 //Slides
 
  $(function() {

@@ -10,8 +10,12 @@
 
 .saj-article-content {
   flex-flow: column;
-  max-width: 1200px;
+  max-width: 1000px;
+  padding:0px 40px 0px;
   margin:0px auto;
+  .content-cta{
+    padding:0px;
+  }
 }
 
 

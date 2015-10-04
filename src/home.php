@@ -41,7 +41,7 @@
 		<?php endif; ?>
 
 		<section class="content-cta">
-		 <a class="main-cta" href="<?php bloginfo('url'); ?>/clients/">Learn more about SAJ<span>&#9658;</span></a>
+		 <a class="main-cta" href="<?php bloginfo('url'); ?>/contact/">Learn more about SAJ<span>&#9658;</span></a>
 	</section>
 
 	</section>

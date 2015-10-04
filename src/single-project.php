@@ -5,50 +5,37 @@
 ?>
 <?php get_header(); ?>
 
-<section class="main-content large-12">
-	<div class="centered group">
+<section class="main-content single-project-page">
 
-	<header class="large-12 general-columns">
+	<header>
 		 <h1><?php the_title(); ?></h1>
 		 <p><?php the_field('project-excerpt'); ?></p>
-		 <section class="project-banner large-12">
-				<ul class="rslides" >
-				  <li><img src="<?php the_field('project-image'); ?>"></li>
-				</ul>
-		</section>
+		 <?php the_post_thumbnail('large'); ?>
 	</header>
 
-	<section class="large-12 medium-12">
-
-		<section class="general-columns large-8 medium-12">
+		<section class="project-intro">
 			<?php the_field('project-intro'); ?>
 		</section>
 
-		<section class="general-columns large-4 medium-12">
-			<?php the_field('project-pricing'); ?>
+		<?php if ( get_field('project-logo') ) { ?>
+		<section class="project-logos">
+						<?php the_field('project-logo'); ?>
 		</section>
+		<?php } ?>
 
-	</section>
 
-
-	<section class="general-columns large-8 medium-12">
-		<?php the_field('project-conclusion'); ?>
+	<section class="project-link-area">
 		<!-- <?php previous_post_link(); ?> add this in to link between projects-->
 		
 		<ul class="project-links">
 			<li><a class="main-cta" href="<?php bloginfo('url'); ?>/contact">Get in touch <span>&#9658;</span></a></li>
 			<li><a class="secondary-cta" href="<?php bloginfo('url'); ?>/projects/">Back to projects </a></li>
-			<li><a class="main-cta" href="<?php the_field('project-pdf') ?>" target="_blank"><?php the_title(); ?> (PDF) <span>&#9658;</span></a></li>
 		</ul>
 		<!-- <?php next_post_link(); ?> add this in to link between projects-->
 
 	</section>
 
-	
 
-
-
-	</div>
 </section>
 
 

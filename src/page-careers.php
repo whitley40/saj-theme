@@ -5,10 +5,9 @@
 ?>
 <?php get_header(); ?>
 
-<section class="main-content large-12">
-	<div class="centered group">
+<section class="main-content">
 
-	<header class="large-12 general-columns">
+	<header>
 		 <h1><?php the_title(); ?></h1>
 		 <p>Check out our latest opportunities below. Or return to <a href="<?php bloginfo('url'); ?>/about/">about us.</a></p>
 	</header>
@@ -27,19 +26,18 @@
 		<!-- Job Posts  -->
 		<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 
-			<section class="general-columns large-12 job-section" style=" padding: 20px; margin-bottom: 20px; background-color: #eee; border-radius: 8px;">
+			<section class="job-section">
 				<h2><?php the_title(); ?></h2>
 				<?php the_field('job-description'); ?>
-				<a href="<?php the_field('job-pdf')  ?>" target="_blank" class="main-cta">Full Job Specification (PDF) <span>&#9658;</span></a>
-				<a href="mailto:info@sajconultants.com" target="_blank" class="main-cta">Apply Today <span>&#9658;</span></a>
+				<section class="content-cta">
+					<a href="<?php the_field('job-pdf')  ?>" target="_blank" class="main-cta">Full Job Specification (PDF) <span>&#9658;</span></a>
+					<a href="mailto:info@sajconultants.com" target="_blank" class="main-cta">Apply Today <span>&#9658;</span></a>
+				</section>
 			</section>
 
 		<?php endwhile;  endif; wp_reset_postdata(); ?>
 
-		
 
-
-	</div>
 </section>
 
 

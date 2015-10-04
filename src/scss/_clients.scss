@@ -11,12 +11,13 @@
     //justify-content: space-between;
     li{
       display:flex;
-      margin: 0px 10px 10px 0px;
+      margin: 0px 5px 5px 0px;
     }
     a{
-      padding:10px;
+      padding:15px;
       background:$saj-light-grey;
       font-family: $font-titles;
+      @include font-size(14px); 
       color: $saj-dark-grey;
       &:hover{
         background:$saj-black;

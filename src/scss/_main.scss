@@ -89,3 +89,9 @@ header {
   
 }
 
+@media print { 
+ /* All your print styles go here */
+ .main-tagline, .nav-header, .social, .project-link-area { display: none !important; } 
+
+}
+

@@ -75,7 +75,7 @@
 	</section>
 
 	<section class="content-cta">
-		 <a class="main-cta" href="<?php bloginfo('url'); ?>/clients/">Start Collaborating with us Today!<span>&#9658;</span></a>
+		 <a class="main-cta" href="<?php bloginfo('url'); ?>/contact/">Start Collaborating with us Today!<span>&#9658;</span></a>
 	</section>
 
 
