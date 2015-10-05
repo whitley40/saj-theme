@@ -6,6 +6,14 @@ footer {
   display:flex;
   flex-flow: column;
   background:$saj-light-grey;
+  a{
+    display:flex;
+    align-items: center;
+    &:before{
+      @include font-size(14px);
+      padding-right:10px;
+    }
+  }
       //medium screens
       @include bp-medium {
          flex-flow: row wrap;

@@ -59,9 +59,9 @@
 						<!-- this gets the featured image object and stores the array in a variable - its then echoed out in the background -->
 						<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), '', false, '' ); ?>
 						<!-- get the category type for project posts -->
-						<?php $project = strip_tags(get_the_term_list( $post->ID, 'project-type')); ?>
+						<?php $project = strip_tags(get_the_term_list( $post->ID, 'project-type', '', ' ', '')); ?>
 	
-					<section class="single-project All <?php echo($project . ' '); ?>">	
+					<section class="single-project All <?php echo($project); ?>">	
 						<a class="project-holder" href="<?php the_permalink(); ?>" style="background: #2e2e2e url('<?php echo($src[0]) ?>') no-repeat;
 			  background-size: cover; background-position: center;">
 

@@ -3,15 +3,42 @@
 
 <section class="main-content blog">
 
+
+<header>
+		 <h1>SAJ Transport Consultants Blog</h1>
+	</header>
+
+<!-- sort your blog list out -->
+
+<section>
+	<form>
+			  <label class="p-type selected"><input type="radio" name="blog-type" value="All" checked><i>All Projects</i></label>
+		<?php 
+				$terms = get_terms( 'category' );
+						 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+						     echo '';
+						     foreach ( $terms as $term ) {
+						       echo '<label class="p-type">'. '<input type="radio" name="blog-type"' . 'value="' . $term->name . '">' . '<i>' . $term->name . '</i>' . '</label>';
+						        
+						     }
+						     echo '';
+		 					}
+ 		?>
+ 		</form>
+ 		</section>
+
+
 	<!--  MAIN BLOGLIST AREA  -->
 
 
 	<section class="articlelist">
-			<h1>SAJ Transport Consultants Blog</h1>
+			
 
 		<?php if( have_posts() ): while( have_posts() ) : the_post(); ?>
 
-			<div class="saj-article-item">
+			<?php $blogcat = strip_tags(get_the_term_list( $post->ID, 'category', '', ' ', '')); ?>
+
+			<div class="saj-article-item  All <?php echo($blogcat); ?>">
 
 				<h2><a class="article-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<div class="saj-author-block">

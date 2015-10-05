@@ -13,16 +13,16 @@
 		<section >
 			<h1>Get in Touch</h1>
 			<p>Email<br>
-			<a target="blank" href="mailto:info@saj-consultants.com">info@saj-consultants.com</a>
+			<a class="icon-email-envelope" target="blank" href="mailto:info@saj-consultants.com"><span>info@saj-consultants.com</span></a>
 			<p>Telephone<br>
-			<a target="blank" href="tel:+4401912618679">0191 261 8679</a></p>
+			<a class="icon-call-phone-square" target="blank" href="tel:+4401912618679"><span>0191 261 8679</span></a></p>
 		</section>
 
 		<section class="social">
 			<h1>Social Media</h1>
 			<ul>
-			<li><a target="blank" href="https://twitter.com/Sajtransportcon">Twitter</a></li>
-			<li><a target="blank" href="https://www.linkedin.com/company/s-a-j-transport-consultants">Linked In</a></li>
+			<li><a class="icon-social-twitter" target="blank" href="https://twitter.com/Sajtransportcon"><span>Twitter</span></a></li>
+			<li><a class="icon-linkedin-square" target="blank" href="https://www.linkedin.com/company/s-a-j-transport-consultants"><span>Linked In</span></a></li>
 			</ul>
 		</section>
 

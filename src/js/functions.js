@@ -8,8 +8,8 @@ jQuery(document).ready(function($) {
 $('.bun').click(function(){
   $('.nav').toggleClass('nav-active');
   $('.bun').toggleClass('bun-close');
-  $('.burger').toggleClass('icon-menu');
-  $('.burger').toggleClass('icon-close');
+  $('.burger').toggleClass('icon-align-justify');
+  $('.burger').toggleClass('icon-cancel');
   $('body').toggleClass('no-scroll');
 });
 
@@ -28,6 +28,24 @@ $("input:radio[name=project-type]").click(function(){
   project_type.css('display', 'flex');
 
 });
+
+//sorting blog 
+
+$("input:radio[name=blog-type]").click(function(){
+
+  var value = '.' + $(this).val();
+
+  // if single article is not equal to single article or single article with this particular value, hide
+
+  var article_item = $('.saj-article-item');
+  var article_item_type =  $('.saj-article-item' + value);
+
+  article_item.css('display', 'none');
+  article_item_type.css('display', 'flex');
+
+});
+
+//change styling of the radio buttons
 
 $('.p-type').on('click', function(){
     $('.p-type').removeClass('selected');

@@ -13,6 +13,7 @@
 	<meta name="Copyright" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php wp_title(); ?></title>
+	<link href="https://fontastic.s3.amazonaws.com/weQBB68MahQFqMymzFuyXn/icons.css" rel="stylesheet">
 	<?php wp_head(); ?>
 
 </head>
@@ -29,7 +30,7 @@
 		<nav class="nav" role="nav">
 
 		<div class="bun">
-			<div class="burger">
+			<div class="burger icon-align-justify">
 		  </div>
 	  </div>
 

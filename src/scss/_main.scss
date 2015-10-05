@@ -32,6 +32,33 @@ h2{
   margin:0px 0px 15px;
 }
 
+//forms
+
+form{
+    display:flex;
+    flex-flow: row wrap;
+    font-family: $font-titles;
+    @include font-size(12px);
+    color:$saj-dark-grey;
+    label{
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      padding: 10px 15px;
+      background: $saj-light-grey;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 0px 10px 10px 0px;
+      &:hover, &.selected{
+          background: $saj-black;
+          color:lighten($saj-blue, 20%);
+      }
+      i{
+        margin-left:10px;
+      }
+    }
+  }
+
 //transition everything
 * {
 	transition: all 0.5s ease;
