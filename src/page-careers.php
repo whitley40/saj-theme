@@ -35,7 +35,16 @@
 				</section>
 			</section>
 
-		<?php endwhile;  endif; wp_reset_postdata(); ?>
+			<?php endwhile;  else : ?>  
+
+			<section class="no-opportunities">
+				<p>Whilst we don't have any opportunities right now, send us your CV and we'll happily consider you when future opportunities arise.</p>
+				<p>Simply send your CV to <a href="mailto:info@saj-consultants.com" target="_blank">info@saj-consultants.com</a></p>
+			</section>
+		
+
+		<?php endif; wp_reset_postdata(); ?>
+
 
 
 </section>

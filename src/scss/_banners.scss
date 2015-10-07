@@ -12,6 +12,10 @@
     width: 100%;
     max-height: 400px;
   }
+  video{
+    object-fit: cover;
+    max-height: 400px;
+  }
 } 
 
 .project-banner {
@@ -20,6 +24,8 @@
     max-height: 300px;
   }
 }
+
+
 
 // Sliding Banner - Homepage
 

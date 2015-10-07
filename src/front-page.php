@@ -27,6 +27,15 @@
 				$home_slide_three = 'home-slide-three';
 			?>
 
+			<li>
+			<a href="#">
+			<div class="video-container">
+			<video src="<?php bloginfo('template_directory'); ?>/vids/traffic-2.webm" width="100%" height="auto" loop autoplay></video>
+			</div>
+			<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">View Our <?php the_field('slide-one-page'); ?> <span>►</span></a>
+			</a>
+			</li>
+
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 
 			<?php if ( get_field($home_slide_one) ) { ?>

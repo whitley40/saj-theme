@@ -69,6 +69,13 @@ gulp.task('moveFonts', function() {
     .pipe(gulp.dest('../wp-content/themes/saj-theme/fonts'));
 });
 
+/* move videos across */
+
+gulp.task('moveVids', function() {
+    return gulp.src('src/vids/**')
+    .pipe(gulp.dest('../wp-content/themes/saj-theme/vids'));
+});
+
 /* move php across */
 
 gulp.task('movePHP', function() {
@@ -124,7 +131,7 @@ gulp.task('clean', function(){
 
 // gulp.task('serve-wp',['browsersync-wp']);
 
-gulp.task("wordpress", ["minifyScripts","minifyCss",'moveImgs','moveFonts', 'movePHP']);
+gulp.task("wordpress", ["minifyScripts","minifyCss",'moveImgs','moveFonts', 'movePHP', 'moveVids']);
 
 /* gulp default */
 
