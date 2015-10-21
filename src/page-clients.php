@@ -23,7 +23,7 @@
 
 
 	<section class="all-clients">
-		<h2>Our Clients Include:</h2>
+		<h2>Our Clients Include</h2>
 			
 
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
