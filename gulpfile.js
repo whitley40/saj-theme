@@ -39,9 +39,7 @@ gulp.task('minifyCss', ['addPrefix'], function(){
 
 gulp.task("concatScripts", function(){
     return gulp.src(['src/js/**/*.js'])
-    .pipe(maps.init())
-    .pipe(concat("functions.js"))
-    .pipe(maps.write('../maps'))
+    .pipe(concat("app.js"))
     .pipe(gulp.dest('../wp-content/themes/saj-theme/js'));
 });
 

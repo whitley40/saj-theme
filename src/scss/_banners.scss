@@ -8,13 +8,14 @@
   padding:0px;
   position:relative;
   text-align:center;
+  border-bottom:10px solid $saj-light-grey;
   img{
     width: 100%;
-    max-height: 400px;
+    max-height: 350px;
   }
   video{
     object-fit: cover;
-    max-height: 400px;
+    max-height: 300px;
   }
 } 
 
@@ -24,8 +25,6 @@
     max-height: 300px;
   }
 }
-
-
 
 // Sliding Banner - Homepage
 
@@ -62,19 +61,35 @@
          margin-bottom: 0px;
       }
   }
+  h1{
+        position:absolute;
+        width:100%;
+        color:#fff;
+        top:5%;
+        padding:0px 40px 0px;
+        text-align: left;
+        @include font-size(35px);
+        text-shadow: 2px 2px 8px $saj-black;
+          //medium screens up
+          @include bp-medium {
+          top:auto;
+          width:auto;
+          bottom:35%;
+          @include font-size(55px);
+          }
+  }
   .main-cta{
     position:absolute;
     width:100%;
     bottom:0px;
     border-radius:0;
+    box-shadow: 2px 2px 8px $saj-black;
+    z-index: 10;
       //medium screens
       @include bp-medium {
         width:auto;
-        //max-width: 250px;
-        //margin:0px auto;
-        //right:0px;
         left:40px;
-        bottom:40px;
+        bottom:15%;
         border-radius:5px;
       }
   }
@@ -83,25 +98,39 @@
 .rslides_nav {
   display: flex;
   justify-content: center;
+  align-items:flex-end;
   flex: 1 auto;
-  background:#eee;
-  padding:20px 20px;
-  color: #444;
-  font-family: $font-titles;
+  background:none;
+  color: $saj-white;
+  text-shadow: 1px 1px 4px $saj-black;
+  font-family: $font-icons;
+  position: absolute;
+    top: 0px;
+    z-index: 2;
+    height: calc(100% - 55px);
+    width: 30px;
+    //medium screens
+      @include bp-medium {
+        height:100%;
+
+      }
   &:hover {
     background:#2d96d8;
     color: #fff;
+    text-shadow: 2px 2px 4px $saj-black;
+    width: 32px;
+    align-items:center;
   }
   &.prev{
+    left: 0px;
     &:after {
-      content:" Previous";
-      padding-left:10px;
+      content:"";
     }
   }
   &.next{
+    right:0px; 
     &:before {
-      content:"Next ";
-      padding-right:10px;
+      content:"";
     }
   }
 

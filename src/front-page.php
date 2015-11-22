@@ -27,20 +27,14 @@
 			$home_slide_three = 'home-slide-three';
 			?>
 
-			<li>
-				<a href="#">
-					<div class="video-container">
-						<video src="<?php bloginfo('template_directory'); ?>/vids/traffic-2.webm" width="100%" height="auto" loop autoplay></video>
-					</div>
-					<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">View Our <?php the_field('slide-one-page'); ?> <span>►</span></a>
-				</a>
-			</li>
+			
 
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 
 				<?php if ( get_field($home_slide_one) ) { ?>
 				<li>
 					<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">
+						<h1>Explore our work.</h1>
 						<img src="<?php the_field('home-slide-one'); ?>">
 						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">View Our <?php the_field('slide-one-page'); ?> <span>►</span></a>
 					</a>
@@ -50,6 +44,7 @@
 				<?php if ( get_field($home_slide_two) ) { ?>
 				<li>
 					<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">
+					<h1>Delve into our solutions.</h1>
 						<img src="<?php the_field('home-slide-two'); ?>">
 						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">View Our <?php the_field('slide-two-page'); ?> <span>►</span></a>
 					</a>
@@ -59,6 +54,7 @@
 				<?php if ( get_field($home_slide_three) ) { ?>
 				<li>
 					<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">
+					<h1>What's on our mind?</h1>
 						<img src="<?php the_field('home-slide-three'); ?>">
 						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">View Our <?php the_field('slide-three-page'); ?> <span>►</span></a>
 					</a>
@@ -83,11 +79,24 @@
 		</div>
 
 		<div class="content-col">
-			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
-				<?php the_field('home-twitter-title'); ?>
-				<?php the_field('home-twitter-plugin'); ?>
-			<?php endwhile;  endif; wp_reset_postdata(); ?>
-			<?php get_sidebar('homepage'); ?>
+			<h1>Over 30 years experience.</h1>
+			<section class="home-tab">
+				<a href="<?php bloginfo('url'); ?>/services" class="tab-link">
+					<h1>Strategy & Masterplanning</h1>
+				</a>
+			</section>
+			<section class="home-tab">
+				<a href="<?php bloginfo('url'); ?>/services" class="tab-link">
+				<h1>Development Planning</h1>
+					
+				</a>
+			</section>
+			<section class="home-tab">
+				<a href="<?php bloginfo('url'); ?>/services" class="tab-link">
+				<h1>Travel Plan Services</h1>
+					
+				</a>
+			</section>
 		</div>
 
 	</section>

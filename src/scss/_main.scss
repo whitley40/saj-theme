@@ -1,5 +1,9 @@
 //SAJ Sass Styles
 
+body{
+  border:10px white solid;
+}
+
 // main body styles
 p{
 	font-family:$font-body;
@@ -115,6 +119,10 @@ header {
   }
   
 }
+
+//homepage tabs
+
+
 
 @media print { 
  /* All your print styles go here */

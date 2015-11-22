@@ -62,9 +62,7 @@ add_action( 'wp_enqueue_scripts', 'saj_theme_styles');
 
 function saj_theme_js(){
 
-	wp_enqueue_script('reponsiveslides_js', get_template_directory_uri() . '/js/libs/responsiveslides.js', array('jquery'),'', true);
-
-	wp_enqueue_script('functions_js', get_template_directory_uri() . '/js/functions.js', array('jquery'),'', true);
+	wp_enqueue_script('functions_js', get_template_directory_uri() . '/js/app.js', array('jquery'),'', true);
 
 
 }
