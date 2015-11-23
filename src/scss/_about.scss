@@ -1,0 +1,69 @@
+.our-people{
+    flex-flow: column;
+    flex: 1 100%;
+    padding-top:20px;
+}
+
+
+.profiles{
+  display:flex;
+  flex-flow:row wrap;  
+   justify-content:space-around;
+}
+.profile-link{
+  text-decoration:none;
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  width:300px;
+  height:auto;
+  padding:60px 30px 30px;
+  margin:10px 15px 30px 0px;
+  background:#fff;
+  border-radius:10px;
+  box-shadow:0px 2px 4px $light-grey;
+  animation: fadeIn 0.4s linear;
+  transition: all 0.5s ease;
+  h1{
+    color:$dark-grey;
+    font-size:25px;
+    line-height:1.5;
+  }
+  h2{
+    color:$light-grey;
+    font-size:17px;
+    line-height:1.5;
+    margin-bottom:20px;
+  }
+  p{
+    color:$dark-grey;
+    font-size:14px;
+    line-height:1.5;
+    margin:15px 0px 15px;
+  }
+  .pic{
+    position:absolute;
+    top:-30px;
+    right:-30px;
+    display:block;
+    width:120px;
+    height:120px;
+    border:5px solid #fff;
+    border-radius:50%;
+    box-shadow:0px 2px 3px $light-grey;
+    transition: all 0.3s ease-in;
+    transform-style: preserve-3d;
+  }
+  .info{
+    padding:15px 0px 15px;
+    border-top:1px $lightest-grey solid;
+  }
+  &:hover{
+    background:#ffffff;
+    box-shadow:0px 3px 15px #000;
+    .pic {
+      box-shadow:0px 3px 6px $dark-grey;
+      transform: rotateY(-180deg);
+    }   
+  }
+}
