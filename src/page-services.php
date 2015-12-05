@@ -5,50 +5,35 @@
 ?>
 <?php get_header(); ?>
 
-<section class="main-content">
+<section class="main-content tabbed-content">
 
-	<header>
-		 <h1><?php the_title(); ?> </h1>
-		 <?php the_field('service-description'); ?>
-		 <?php the_field('service-secondary-title'); ?>
-	</header>
+<!-- container-->	
 
-	<section class="all-services">
-		
-		<?php
-		$args = array(
-			'post_type' => 'page'
-			);
-		$query = new WP_Query( $args );
-		?>
+<div class="container-tabs">
 
-			<!-- column one - ul inside the custom field -->
-			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
-			
-			<?php the_field('service-col-one'); ?>
+	<ul class="tabs">
+		<li class="tab-link current" data-tab="tab-1">Strategy & Masterplanning</li>
+		<li class="tab-link" data-tab="tab-2">Development Planning</li>
+		<li class="tab-link" data-tab="tab-3">Travel Plan Services</li>
+	</ul>
 
-			<?php endwhile;  endif; wp_reset_postdata(); ?>
+	<div id="tab-1" class="tab-content current">
+		<p>Strategy info</p>
+	</div>
+	<div id="tab-2" class="tab-content">
+		 <p>Development info</p>
+	</div>
+	<div id="tab-3" class="tab-content">
+		<p>Travel Plan Info</p>
+	</div>
 
-			<!-- column two - ul inside the custom field -->
-			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
-			
-			<?php the_field('service-col-two'); ?>
+	<div class="projects">
+		3 randomised projects in here
+	</div>
 
-			<?php endwhile;  endif; wp_reset_postdata(); ?>
+	<!-- container -->
 
-			<!-- column two - ul inside the custom field -->
-			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
-			
-			<?php the_field('service-col-three'); ?>
-
-			<?php endwhile;  endif; wp_reset_postdata(); ?>
-
-
-	</section>
-
-	<section class="content-cta">
-	<a class="main-cta" href="<?php bloginfo('url'); ?>/contact/">Find out more information <span>&#9658;</span></a>
-	</section>
+	</div>
 			
 
 </section>

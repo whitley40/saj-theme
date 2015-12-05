@@ -8,7 +8,7 @@
     flex: 1 100%;
     align-items:center;
     text-align: left;
-    background: $saj-black;
+    background: $saj-blue;
     padding:0px;
     margin:0px;
     height: 100px;
@@ -17,7 +17,7 @@
     margin-bottom: 10px;
     border-radius:5px;
     h1{
-    color: $saj-dark-grey;
+    color: $saj-white;
     @include font-size(17px);
     line-height: 1.5;
     padding:0px;
@@ -36,9 +36,9 @@
       content: '';
     }
     &:hover{
-      background:$saj-blue;
+      background:$saj-black;
       h1{
-        color: $saj-white;
+        color:lighten($saj-blue, 20%);
       }
     }
 }
