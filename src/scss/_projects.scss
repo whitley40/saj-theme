@@ -7,6 +7,21 @@
   flex-flow: column;
 }
 
+//sort the header & filter out
+
+.filter-contain{
+  display:flex;
+  flex-flow:row wrap;
+  padding-bottom:40px;
+  header{
+    flex:0 auto;
+  }
+  section{
+    padding:0px 40px 0px 0px;
+    margin-left:auto;
+  }
+}
+
 //all project list
 
 .all-projects {

@@ -9,6 +9,8 @@
 
 <section class="main-content project-page">
 
+	<div class="filter-contain">
+
 	<header>
 		 <h1><?php the_title(); ?></h1>
 	</header>
@@ -31,6 +33,8 @@
  		?>
  		</form>
 	</section>
+
+	</div>
 
 
 

@@ -3,7 +3,7 @@
 
 <section class="main-content blog">
 
-
+<div class="filter-contain">
 <header>
 		 <h1>SAJ Transport Consultants Blog</h1>
 	</header>
@@ -26,6 +26,8 @@
  		?>
  		</form>
  		</section>
+
+ 		</div>
 
 
 	<!--  MAIN BLOGLIST AREA  -->

@@ -1,38 +1,63 @@
 //services page
 
+.tabbed-content{
+  display:flex;
+  flex-flow: column; 
+  h1{
+    margin:0px 0px 40px 40px;
+  }
+}
+
 
     .container-tabs{
       display:flex;
       flex-flow:column;
       flex:1;
+      padding:40px;
+      background:$saj-light-grey;
+      h1{
+        margin:20px 0px;
+      }
+
     }
+
+    // actual tabs
 
     ul.tabs{
       display:flex;
       margin: 0px;
       padding: 0px;
-      list-style: none;
+      list-style:none;
     }
     ul.tabs li{
-      background: none;
-      color: #222;
-      padding: 10px 15px;
+      display:flex;
+      justify-content: flex-start;
+      font-family: $font-titles;
+      background:$saj-light-grey;
+      color: $saj-grey;
       cursor: pointer;
+      padding:20px 20px;
+      margin-right: 5px;
     }
 
     ul.tabs li.current{
-      background: $saj-black;
-      color: $saj-white;
+      background:$saj-white;
+      color: $saj-black;
     }
+
+    // tab content
 
     .tab-content{
       display: none;
-      background: $saj-black;
-      padding: 40px;
+      padding: 40px 20px;
       flex:1 100%;
       width: 100%;
-      p{
-        color: $saj-white;
+      background:$saj-white;
+      ul{
+        font-family: $font-body;
+        color: $saj-grey;
+        line-height: 1.5;
+        list-style: disc outside none;
       }
     }
 
@@ -40,3 +65,69 @@
       display: flex;
       flex:1 100%;
     }
+
+    .col-one{
+      flex:5 100%;
+      padding-right:100px;
+    }
+
+    .col-two{
+      flex:1 400px;
+    }
+
+    // project linking
+
+    .projects-saj-contain {
+      display:flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      :nth-child(2){
+        margin:0px 20px;
+      }
+    }
+
+    .project-saj {
+      display:flex;
+      flex: 0 350px;
+      font-family: $font-titles;
+      a{
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        flex: inherit;
+        background:$saj-grey;
+        img{
+          width:100%;
+          height:auto;
+        }
+        button{
+          display:flex;
+          align-self:stretch;
+          margin:0px!important;
+          padding:20px;
+          background:$saj-blue;
+          border:none;
+          cursor:pointer;
+          font-family: $font-titles;
+          color: $saj-light-grey;
+          @include font-size(14px);
+          
+        }
+        &:hover{
+          button{
+              background: #000;
+              color:lighten($saj-blue, 20%);
+              }
+            }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
