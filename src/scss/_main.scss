@@ -52,7 +52,7 @@ form{
       background: $saj-light-grey;
       cursor: pointer;
       border-radius: 5px;
-      margin: 0px 10px 10px 0px;
+      margin: 0px 0px 10px 10px;
       &:hover, &.selected{
           background: $saj-black;
           color:lighten($saj-blue, 20%);
