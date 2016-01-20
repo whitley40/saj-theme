@@ -41,6 +41,13 @@ $("#"+hashURL).addClass('current');
 //get tab-link which matches hash
 var tabURL = $(".tab-link[data-tab='" + hashURL + "']");
 
+//add current to the correct tab link, if there's no tab link add the current class to the tab-link with data-tab tab-1 and the element with id of tab-1
+
+if (hashURL == false) {
+    $(".tab-link[data-tab='tab-1']").addClass('current');
+    $("#tab-1").addClass('current');
+}
+
 $(tabURL).addClass('current');
 
 
