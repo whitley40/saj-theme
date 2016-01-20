@@ -2,18 +2,22 @@
   padding:0px;
   margin: 0px;
   .tab-link{
+    span{
+        @include font-size(30px);
+        color: $saj-white;
+        margin: 0px 0px 10px;
+    }
     position: relative;
     display:flex;
-    flex-flow: row flex-wrap;
+    flex-flow: column;
     flex: 1 100%;
     align-items:center;
-    text-align: left;
+    text-align: center;
+    justify-content: center;
     background: $saj-blue;
-    padding:0px;
+    padding:20px;
     margin:0px;
-    height: 100px;
-    overflow: hidden;
-    padding-left:170px;
+    height: auto;
     margin-bottom: 10px;
     border-radius:5px;
     h1{
@@ -23,23 +27,8 @@
     padding:0px;
     margin:0px;
   }
-    &:before{
-      position:absolute;
-      left:0;
-      top:0;
-      display:block;
-      width:150px;
-      height:100px;
-      background:$saj-black url('imgs/project-wynyard.jpg');
-      background-size:cover;
-      background-position:top right;
-      content: '';
-    }
-    &:hover{
-      background:$saj-black;
-      h1{
-        color:lighten($saj-blue, 20%);
-      }
+  &:hover{
+        background:$saj-black;
     }
 }
   

@@ -5,6 +5,12 @@
 	?>
 	<?php get_header(); ?>
 
+	<style>
+  .slide-one { background-image: url(<?php the_field('home-slide-one'); ?>); }
+  .slide-two { background-image: url(<?php the_field('home-slide-two'); ?>); }
+  .slide-three { background-image: url(<?php the_field('home-slide-three'); ?>); }
+</style>
+
 	<?php
 	$args = array(
 		'post_type' => 'page'
@@ -32,18 +38,18 @@
 			<?php if( $query->have_posts() ): while( $query->have_posts() ) : $query->the_post(); ?>
 
 				<?php if ( get_field($home_slide_one) ) { ?>
-				<li>
-					<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">
+				<li class="slide-one">
+					<a class="hit-me" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">
 						<h1>Explore our work.</h1>
-						<img src="<?php the_field('home-slide-one'); ?>">
+						
 						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">View Our <?php the_field('slide-one-page'); ?> <span>►</span></a>
 					</a>
 				</li>
 				<?php } ?>
 
 				<?php if ( get_field($home_slide_two) ) { ?>
-				<li>
-					<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">
+				<li class="slide-two">
+					<a class="hit-me" href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">
 					<h1>Delve into our solutions.</h1>
 						<img src="<?php the_field('home-slide-two'); ?>">
 						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">View Our <?php the_field('slide-two-page'); ?> <span>►</span></a>
@@ -52,8 +58,8 @@
 				<?php } ?>
 
 				<?php if ( get_field($home_slide_three) ) { ?>
-				<li>
-					<a href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">
+				<li class="slide-three">
+					<a class="hit-me" href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">
 					<h1>What's on our mind?</h1>
 						<img src="<?php the_field('home-slide-three'); ?>">
 						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">View Our <?php the_field('slide-three-page'); ?> <span>►</span></a>
@@ -81,22 +87,24 @@
 		<div class="content-col">
 			<h1>Over 30 years experience.</h1>
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services" class="tab-link">
+				<a href="<?php bloginfo('url'); ?>/services/#tab-1" class="tab-link">
+					<span class="icon-map"></span>
 					<h1>Strategy & Masterplanning</h1>
 				</a>
 			</section>
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services" class="tab-link">
-				<h1>Development Planning</h1>
-					
+				<a href="<?php bloginfo('url'); ?>/services/#tab-2" class="tab-link">
+				<span class="icon-file-text"></span>
+					<h1>Development Planning</h1>
 				</a>
 			</section>
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services" class="tab-link">
-				<h1>Travel Plan Services</h1>
-					
+				<a href="<?php bloginfo('url'); ?>/services/#tab-3" class="tab-link">
+				<span class="icon-road"></span>
+					<h1>Travel Plan Services</h1>
 				</a>
 			</section>
+			<p><a href="#">View all of our services &raquo </a></p>
 		</div>
 
 	</section>

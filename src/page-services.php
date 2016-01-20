@@ -16,9 +16,9 @@
 
 
 	<ul class="tabs">
-		<li class="tab-link current" data-tab="tab-1">Strategy & Masterplanning</li>
-		<li class="tab-link" data-tab="tab-2">Development Planning</li>
-		<li class="tab-link" data-tab="tab-3">Travel Plan Services</li>
+		<li class="tab-link current" data-tab="tab-1"><span class="icon-map"></span>Strategy & Masterplanning</li>
+		<li class="tab-link" data-tab="tab-2"><span class="icon-file-text"></span>Development Planning</li>
+		<li class="tab-link" data-tab="tab-3"><span class="icon-road"></span>Travel Plan Services</li>
 	</ul>
 
 	<div id="tab-1" class="tab-content current">

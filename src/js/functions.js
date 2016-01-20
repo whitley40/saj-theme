@@ -22,7 +22,29 @@ $('ul.tabs li').click(function(){
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
+    window.location.hash = tab_id;
   });
+
+//if the url has correct hash name, switch current class to this tab
+
+ $(function() {
+
+//get hash off the url
+var hashURL = window.location.hash.substr(1);
+//remove current class off all li tabs
+$('ul.tabs li').removeClass('current');
+$('.tab-content').removeClass('current');
+
+//add current class to li tab with hash from url
+$("#"+hashURL).addClass('current');
+
+//get tab-link which matches hash
+var tabURL = $(".tab-link[data-tab='" + hashURL + "']");
+
+$(tabURL).addClass('current');
+
+
+});
 
 //Sorting projects
 
