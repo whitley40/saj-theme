@@ -7,7 +7,7 @@
 			Northumbrian Water House<br>
 			7-15 Pink Lane <br>
 			Newcastle Upon Tyne <br>
-			<a href="#">NE1 5DW</a></p>
+			NE1 5DW
 		</section>
 
 		<section >
@@ -21,7 +21,7 @@
 		<section class="social">
 			<h1>Social Media</h1>
 			<ul>
-			<li><a class="icon-social-twitter" target="blank" href="https://twitter.com/Sajtransportcon"><span>Twitter</span></a></li>
+			<!-- <li><a class="icon-social-twitter" target="blank" href="https://twitter.com/Sajtransportcon"><span>Twitter</span></a></li> -->
 			<li><a class="icon-linkedin-square" target="blank" href="https://www.linkedin.com/company/s-a-j-transport-consultants"><span>Linked In</span></a></li>
 			</ul>
 		</section>

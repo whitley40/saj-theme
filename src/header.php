@@ -48,7 +48,7 @@
 
 	</header>
 
-	<!-- TAGLINE -->
+	<!-- TAGLINE 
 	<section class="main-tagline">
 		 <p>Sustainable transport solutions. Travel Planning, Strategic Masterplanning, Transport Assessment and more. <a href="<?php bloginfo('url'); ?>/contact/">Contact us today!</a></p>
-	</section>
+	</section>-->

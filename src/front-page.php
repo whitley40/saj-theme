@@ -89,13 +89,19 @@
 			<section class="home-tab">
 				<a href="<?php bloginfo('url'); ?>/services/#tab-1" class="tab-link">
 					<span class="icon-map"></span>
-					<h1>Strategy & Masterplanning</h1>
+					<h1>Site Appraisal</h1>
+				</a>
+			</section>
+			<section class="home-tab">
+				<a href="<?php bloginfo('url'); ?>/services/#tab-1" class="tab-link">
+					<span class="icon-map"></span>
+					<h1>Transport Planning & Policy</h1>
 				</a>
 			</section>
 			<section class="home-tab">
 				<a href="<?php bloginfo('url'); ?>/services/#tab-2" class="tab-link">
 				<span class="icon-file-text"></span>
-					<h1>Development Planning</h1>
+					<h1>Transport Assessment</h1>
 				</a>
 			</section>
 			<section class="home-tab">

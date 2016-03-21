@@ -108,11 +108,11 @@
   align-items:flex-end;
   flex: 1 auto;
   background:none;
-  color: $saj-white;
-  text-shadow: 1px 1px 4px $saj-black;
+  color: transparent;
+  text-shadow: none;
   font-family: $font-icons;
   position: absolute;
-    top: 0px;
+    top: 0;
     z-index: 2;
     height: calc(100% - 55px);
     width: 30px;
@@ -130,12 +130,14 @@
   }
   &.prev{
     left: 0px;
+    align-items:center;
     &:after {
       content:"";
     }
   }
   &.next{
     right:0px; 
+    align-items:center;
     &:before {
       content:"";
     }

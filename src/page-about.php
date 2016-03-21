@@ -22,9 +22,9 @@
 		<?php the_field('about-content'); ?>
 	</div>
 
-	<section class="content-cta">
+<!-- 	<section class="content-cta">
 	<a class="main-cta" href="<?php bloginfo('url'); ?>/contact/">Get in touch with us today <span>&#9658;</span></a>
-	</section>
+	</section> -->
 
 	<section class="our-people">
 	<h1>Our People</h1>
@@ -33,7 +33,7 @@
 		
   <!-- start profile -->
   <a href="#" class="profile-link">
-    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAK4AAAAJDA4OWJmZGExLTgyMDItNDY3My05ZjIyLTIzMzQzNjVmZGE2Ng.jpg
+    <img src="<?php bloginfo('template_directory'); ?>/imgs/pro-sj.jpg
 " alt="avatar" class="pic" />
     <h1>Steve Jobey</h1>
     <h2>Director</h2>
@@ -50,7 +50,8 @@
 
   <!-- start profile -->
   <a href="#" class="profile-link">
-    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAKGAAAAJDMzNDJhYmE3LTk0YzUtNDcxOS05MDZhLWEyOWUyNjM5Zjk0Mg.jpg" alt="avatar" class="pic" />
+    <img src="<?php bloginfo('template_directory'); ?>/imgs/pro-pwong.jpg
+" alt="avatar" class="pic" />
     <h1>Patrick Wong</h1>
     <h2>Associate Director</h2>
     <div class="info">
@@ -67,7 +68,8 @@
 
   <!-- start profile -->
   <a href="#" class="profile-link">
-    <img src="https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_100x100_v1.png" alt="avatar" class="pic" />
+    <img src="<?php bloginfo('template_directory'); ?>/imgs/pro-pb.jpg
+" alt="avatar" class="pic" />
     <h1>Paul Bigg</h1>
     <h2>Principal Transport Consultant</h2>
     <div class="info">
@@ -79,7 +81,8 @@
 
   <!-- start profile -->
   <a href="#" class="profile-link">
-    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/005/041/062/119e72b.jpg" alt="avatar" class="pic" />
+    <img src="<?php bloginfo('template_directory'); ?>/imgs/pro-pw.jpg
+" alt="avatar" class="pic" />
     <h1>Paul Whitley</h1>
     <h2>Senior Transport Consultant</h2>
     <div class="info">
@@ -93,7 +96,8 @@
 
   <!-- start profile -->
   <a href="#" class="profile-link">
-    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAJ5AAAAJGIwYzgzMGZmLWNlZTgtNGYxNy04MTdmLTI1NjMwNTQ5M2FiNg.jpg" alt="avatar" class="pic" />
+    <img src="<?php bloginfo('template_directory'); ?>/imgs/pro-lw.jpg
+" alt="avatar" class="pic" />
     <h1>Lewis Walker</h1>
     <h2>Transport Engineer</h2>
     <div class="info">
@@ -107,15 +111,16 @@
 
   <!-- start profile -->
   <a href="#" class="profile-link">
-    <img src="https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_100x100_v1.png" alt="avatar" class="pic" />
-    <h1>You?</h1>
-    <h2>New Position</h2>
+    <img src="<?php bloginfo('template_directory'); ?>/imgs/pro-jw.jpg
+" alt="avatar" class="pic" />
+    <h1>Joana Wong</h1>
+    <h2>Role</h2>
     <div class="info">
 
-      <p>If you're interested in joining SAJ Transport Conultants, please drop us an email!</p>
+      <p>Role Desciption</p>
 
     </div>
-    <button class="main-cta">Email Us</button>
+    <button class="main-cta">Email Joana</button>
   </a>
   <!-- //end profile -->
 
