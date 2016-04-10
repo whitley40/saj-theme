@@ -76,6 +76,10 @@
 
     .col-two{
       flex:1 400px;
+      li{
+        @include font-size(15px);
+        line-height: 25px;
+      }
     }
 
     // project linking

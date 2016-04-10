@@ -86,6 +86,8 @@
 
 		<div class="content-col">
 			<h1>Over 30 years experience.</h1>
+
+			<div class="minigrid">
 			<section class="home-tab">
 				<a href="<?php bloginfo('url'); ?>/services/#tab-1" class="tab-link">
 					<span class="icon-map"></span>
@@ -93,24 +95,29 @@
 				</a>
 			</section>
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services/#tab-1" class="tab-link">
-					<span class="icon-map"></span>
+				<a href="<?php bloginfo('url'); ?>/services/#tab-2" class="tab-link">
+					<span class="icon-file-text"></span>
 					<h1>Transport Planning & Policy</h1>
 				</a>
 			</section>
+			</div>
+
+			<div class="minigrid">
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services/#tab-2" class="tab-link">
-				<span class="icon-file-text"></span>
+				<a href="<?php bloginfo('url'); ?>/services/#tab-3" class="tab-link">
+				<span class="icon-clipboard"></span>
 					<h1>Transport Assessment</h1>
 				</a>
 			</section>
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services/#tab-3" class="tab-link">
+				<a href="<?php bloginfo('url'); ?>/services/#tab-4" class="tab-link">
 				<span class="icon-road"></span>
 					<h1>Travel Plan Services</h1>
 				</a>
 			</section>
-			<p><a href="#">View all of our services &raquo </a></p>
+			</div>
+
+			<!-- <p><a href="#">View all of our services &raquo </a></p> -->
 		</div>
 
 	</section>

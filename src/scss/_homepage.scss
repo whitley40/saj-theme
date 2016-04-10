@@ -1,6 +1,12 @@
+.minigrid{
+    display:flex;
+    flex-flow: row;
+}
+
 .home-tab{
   padding:0px;
-  margin: 0px;
+        margin: 0px 10px 0px 0px;
+    flex: 1;
   .tab-link{
     span{
         @include font-size(30px);

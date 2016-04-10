@@ -73,7 +73,7 @@
     <h1>Paul Bigg</h1>
     <h2>Principal Transport Consultant</h2>
     <div class="info">
-<p>Paul Bigg is an experienced transport engineer and transport planner, with over 30 years of experience in transport planning. Having moved to the North East for 4 years, Paul has been involved in numerous developments across the country. Paul is a Member of the Chartered Institution of Highways and Transportation.</p>
+<p>Paul Bigg is an experienced transport engineer and transport planner, with over 30 years of experience in the profession.</p><p>Having moved to the North East for 5 years, Paul has been involved in numerous developments across the country.</p>
     </div>
     <button class="main-cta">Email Paul B</button>
   </a>
@@ -87,7 +87,7 @@
     <h2>Senior Transport Consultant</h2>
     <div class="info">
 
-      <p>Paul Whitley is a transport planner with a MSc in Transport Planning and Policy. With over 8 years of experience, Paul has developed a broad range of transport planning skills and involved in many successful developments. Paul is a Member of Transport Planning Society.</p>
+      <p>Paul is a transport plannerwith a MSc in Transport Planning and Policy. With over 8 years of experience, Paul has developed a broad range of transport planning skills and has been involved in many successful developments.</p><p>Paul is a Member of Transport Planning Society and a Member of the Chartered Institution of Highways and Transportation.</p>
 
     </div>
     <button class="main-cta">Email Paul W</button>
@@ -102,7 +102,7 @@
     <h2>Transport Engineer</h2>
     <div class="info">
 
-      <p>Lewis is a graduate engineer with a BSc (Hons) in Geography. Formerly working at a major engineering firm, Lewis undertakes technical engineering design and prepares transport models. Lewis is a Member of Transport Planning Society.</p>
+      <p>Lewis is a graduate engineer with a BSc (Hons) in Geography. Formerly working at a major engineering firm, Lewis undertakes technical engineering design and assists in the preparation of transport models.</p><p>Lewis is a Member of Transport Planning Society.</p>
 
     </div>
     <button class="main-cta">Email Lewis</button>
@@ -117,7 +117,7 @@
     <h2>Role</h2>
     <div class="info">
 
-      <p>Role Desciption</p>
+      <p>Joana has had a varied career leading up to her role as the Office Manager at S.A.J Transport Consultants. Formerly a trained Maths and I.T. teacher, with a BSc (Hons) in Information Systems and a MSc in Human-Computer Interaction with Ergonomics, Joana manages the Company’s I.T. system, accounting, procurement, and the marketing side of the business.</p>
 
     </div>
     <button class="main-cta">Email Joana</button>
