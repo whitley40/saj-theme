@@ -124,6 +124,20 @@
   </a>
   <!-- //end profile -->
 
+  <!-- start profile -->
+  <a href="#" class="profile-link">
+    <img src="https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_100x100_v1.png" alt="avatar" class="pic" />
+    <h1>You?</h1>
+    <h2>New Position</h2>
+    <div class="info">
+
+      <p>If you're interested in joining SAJ Transport Conultants, please drop us an email!</p>
+
+    </div>
+    <button class="main-cta">Email Us</button>
+  </a>
+  <!-- //end profile -->
+
 
 
 	</div>

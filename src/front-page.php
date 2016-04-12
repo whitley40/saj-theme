@@ -40,9 +40,7 @@
 				<?php if ( get_field($home_slide_one) ) { ?>
 				<li class="slide-one">
 					<a class="hit-me" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">
-						<h1>Explore our work.</h1>
-						
-						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-one-page'); ?>/">View Our <?php the_field('slide-one-page'); ?> <span>►</span></a>
+						<h1>Transport Consultants</h1>
 					</a>
 				</li>
 				<?php } ?>
@@ -50,9 +48,7 @@
 				<?php if ( get_field($home_slide_two) ) { ?>
 				<li class="slide-two">
 					<a class="hit-me" href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">
-					<h1>Delve into our solutions.</h1>
-						<img src="<?php the_field('home-slide-two'); ?>">
-						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-two-page'); ?>/">View Our <?php the_field('slide-two-page'); ?> <span>►</span></a>
+					<h1>Planning for Developments</h1>
 					</a>
 				</li>
 				<?php } ?>
@@ -60,9 +56,7 @@
 				<?php if ( get_field($home_slide_three) ) { ?>
 				<li class="slide-three">
 					<a class="hit-me" href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">
-					<h1>What's on our mind?</h1>
-						<img src="<?php the_field('home-slide-three'); ?>">
-						<a class="main-cta" href="<?php bloginfo('url'); ?>/<?php the_field('slide-three-page'); ?>/">View Our <?php the_field('slide-three-page'); ?> <span>►</span></a>
+					<h1>Promoting Sustainable Travel</h1>
 					</a>
 				</li>
 				<?php } ?>
@@ -111,7 +105,7 @@
 			</section>
 			<section class="home-tab">
 				<a href="<?php bloginfo('url'); ?>/services/#tab-4" class="tab-link">
-				<span class="icon-road"></span>
+				<span class="icon-android-bicycle"></span>
 					<h1>Travel Plan Services</h1>
 				</a>
 			</section>
