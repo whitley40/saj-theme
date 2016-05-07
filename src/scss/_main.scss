@@ -2,6 +2,16 @@
 
 body{
   border:10px white solid;
+  background:$saj-light-grey;
+}
+
+.wrapper{
+  @include bp-x-large {
+    max-width: 1300px;
+    margin: 0px auto;
+    -webkit-box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.2);
+box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.2);
+}
 }
 
 // main body styles
@@ -103,10 +113,11 @@ header {
 	display:flex;
   flex-flow: row wrap;
   padding:40px 0px;
+  background:#fff;
   //single column mobile followed by two column flex layout for desktop
   .content-col{
   	flex:1 100%;
-  	padding:0px 40px 40px;
+  	padding:0px 15px 40px;
   	//medium screens
     @include bp-medium {
       flex:1 50%;

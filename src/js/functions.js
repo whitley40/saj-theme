@@ -22,7 +22,7 @@ $('ul.tabs li').click(function(){
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
-    window.location.hash = tab_id;
+    //window.location.hash = tab_id;
   });
 
 //if the url has correct hash name, switch current class to this tab
@@ -44,8 +44,8 @@ var tabURL = $(".tab-link[data-tab='" + hashURL + "']");
 //add current to the correct tab link, if there's no tab link add the current class to the tab-link with data-tab tab-1 and the element with id of tab-1
 
 if (hashURL == false) {
-    $(".tab-link[data-tab='tab-1']").addClass('current');
-    $("#tab-1").addClass('current');
+    $(".tab-link[data-tab='site-appraisal']").addClass('current');
+    $("#site-appraisal").addClass('current');
 }
 
 $(tabURL).addClass('current');

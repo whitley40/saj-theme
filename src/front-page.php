@@ -83,13 +83,13 @@
 
 			<div class="minigrid">
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services/#tab-1" class="tab-link">
+				<a href="<?php bloginfo('url'); ?>/services/#site-appraisal" class="tab-link">
 					<span class="icon-map"></span>
 					<h1>Site Appraisal</h1>
 				</a>
 			</section>
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services/#tab-2" class="tab-link">
+				<a href="<?php bloginfo('url'); ?>/services/#transport-planning" class="tab-link">
 					<span class="icon-file-text"></span>
 					<h1>Transport Planning & Policy</h1>
 				</a>
@@ -98,13 +98,13 @@
 
 			<div class="minigrid">
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services/#tab-3" class="tab-link">
+				<a href="<?php bloginfo('url'); ?>/services/#transport-assessment" class="tab-link">
 				<span class="icon-clipboard"></span>
 					<h1>Transport Assessment</h1>
 				</a>
 			</section>
 			<section class="home-tab">
-				<a href="<?php bloginfo('url'); ?>/services/#tab-4" class="tab-link">
+				<a href="<?php bloginfo('url'); ?>/services/#travel-plan-services" class="tab-link">
 				<span class="icon-android-bicycle"></span>
 					<h1>Travel Plan Services</h1>
 				</a>

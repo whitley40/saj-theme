@@ -23,11 +23,20 @@
 
     // actual tabs
 
+    @include bp-medium {
+      flex-flow: row;
+      padding: 40px 40px;
+    }
+
     ul.tabs{
       display:flex;
+      flex-flow: column;
       margin: 0px;
       padding: 0px;
       list-style:none;
+      @include bp-medium {
+        flex-flow: row;
+      }
     }
     ul.tabs li{
       display:flex;
@@ -53,9 +62,13 @@
     .tab-content{
       display: none;
       padding: 40px 20px;
-      flex:1 100%;
-      width: 100%;
+      flex:0 1 auto;
+      //width: 100%;
       background:$saj-white;
+      flex-flow: column;
+      @include bp-medium {
+        flex-flow: row;
+      }
       ul{
         font-family: $font-body;
         color: $saj-grey;
@@ -64,22 +77,28 @@
       }
       ul.inner{
             padding-left: 15px;
-            opacity: 0.5;
+            opacity: 0.8;
       }
     }
 
     .tab-content.current{
-      display: flex;
-      flex:1 100%;
+       display: flex;
+      // flex:1 100%;
     }
 
     .col-one{
-      flex:5 100%;
-      padding-right:100px;
+      @include bp-medium {
+        flex:5 100%;
+        padding-right:100px;
+      }
+      
     }
 
     .col-two{
-      flex:1 400px;
+      @include bp-medium {
+       flex:1 400px;
+      }
+      
       li{
         @include font-size(15px);
         line-height: 25px;
