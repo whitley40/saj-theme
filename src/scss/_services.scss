@@ -13,8 +13,11 @@
       display:flex;
       flex-flow:column;
       flex:1;
-      padding:40px;
+      padding:40px 20px;
       background:$saj-light-grey;
+      @include bp-medium {
+      padding:40px;
+    }
       h1{
         margin:20px 0px;
       }
@@ -31,9 +34,12 @@
     ul.tabs{
       display:flex;
       flex-flow: column;
-      margin: 0px;
+      margin: 0px 0px 20px;
       padding: 0px;
       list-style:none;
+      @include bp-medium {
+      margin: 0px;
+    }
       @include bp-medium {
         flex-flow: row;
       }
@@ -46,7 +52,10 @@
       color: $saj-grey;
       cursor: pointer;
       padding:20px 20px;
+      margin-right: 0px;
+      @include bp-medium {
       margin-right: 5px;
+    }
       span{
         margin:0px 10px 0px 0px;
       }
@@ -74,6 +83,10 @@
         color: $saj-grey;
         line-height: 1.5;
         list-style: disc outside none;
+        margin-left: 20px;
+        @include bp-medium {
+      margin-left: 0px;
+    }
       }
       ul.inner{
             padding-left: 15px;
@@ -109,17 +122,28 @@
 
     .projects-saj-contain {
       display:flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
+      flex-flow: column nowrap;
+      justify-content:flex-start;
+      @include bp-medium {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
       :nth-child(2){
+        @include bp-medium {
         margin:0px 20px;
+        }
       }
     }
 
     .project-saj {
       display:flex;
-      flex: 0 350px;
+      flex: 0 100%;
       font-family: $font-titles;
+      margin-bottom: 20px;
+      @include bp-medium {
+        flex: 0 350px;
+        margin-bottom: 0px;
+        }
       a{
         display:flex;
         flex-flow: column;

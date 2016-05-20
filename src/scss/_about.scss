@@ -1,8 +1,11 @@
 .our-people{
     flex-flow: column;
     flex: 1 100%;
-    padding:20px 40px;
+    padding:20px 30px;
     background:$saj-light-grey;
+    @include bp-medium {
+      padding:20px 40px;
+    }
     h1, p{
       color:$saj-black;
     }
@@ -25,15 +28,19 @@ button.main-cta{
   position:relative;
   display:flex;
   flex-flow:column;
-  flex:0 400px;
+  flex:0 100%;
   height:auto;
   padding:50px 20px 50px;
-  margin:10px 10px 50px;
+  margin:10px 0px 50px;
   background:#fff;
   border-radius:10px;
   box-shadow:0px 2px 4px $light-grey;
   animation: fadeIn 0.4s linear;
   transition: all 0.5s ease;
+  @include bp-medium {
+    flex:0 400px;
+    margin:10px 10px 50px;
+  }
   h1{
     color:$dark-grey;
     font-size:25px;
