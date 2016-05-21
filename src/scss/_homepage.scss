@@ -4,10 +4,13 @@
 }
 
 .home-tab{
-  padding:0px;
-        margin: 0px 10px 0px 0px;
+    padding:0px;
+    margin: 0px 10px 0px 0px;
     flex: 1;
     height:200px;
+        &:nth-child(2){
+        margin-right: 0px;
+        }
   .tab-link{
     span{
         @include font-size(30px);

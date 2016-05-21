@@ -1,6 +1,12 @@
 //contact page
 
 .contact-page {
+  header{
+    padding:0px 15px;
+    @include bp-medium {
+       padding:0px 40px;
+      }
+  }
   .content-col {
     flex: 1 auto;
   }

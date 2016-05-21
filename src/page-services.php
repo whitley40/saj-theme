@@ -130,7 +130,7 @@
 		</div>
 
 		<div class="project-saj">
-		<a href="#">
+		<a class="last-project" href="#">
 			<img src="<?php bloginfo('template_directory'); ?>/imgs/barratt-1024x457.jpg" alt="">
 			<button>Projects Coming Soon</button>
 			</a>

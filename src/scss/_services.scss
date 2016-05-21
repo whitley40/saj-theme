@@ -123,58 +123,44 @@
     .projects-saj-contain {
       display:flex;
       flex-flow: column nowrap;
-      justify-content:flex-start;
       @include bp-medium {
-        flex-flow: row nowrap;
-        justify-content: space-between;
-      }
-      :nth-child(2){
-        @include bp-medium {
-        margin:0px 20px;
-        }
+       flex-flow: row nowrap;
       }
     }
 
     .project-saj {
-      display:flex;
-      flex: 0 100%;
-      font-family: $font-titles;
-      margin-bottom: 20px;
-      @include bp-medium {
-        flex: 0 350px;
-        margin-bottom: 0px;
-        }
       a{
         display:flex;
-        flex-flow: column;
-        align-items: center;
-        flex: inherit;
-        background:$saj-grey;
+        background:$saj-blue;
+        flex-flow: column nowrap;
+        margin-bottom: 20px;
+        cursor:pointer;
+        @include bp-medium {
+        margin: 10px;
+        }
         img{
           width:100%;
-          height:auto;
         }
         button{
           display:flex;
-          align-self:stretch;
-          margin:0px!important;
-          padding:20px;
-          background:$saj-blue;
           border:none;
-          cursor:pointer;
+          text-align: center;
+          justify-content: center;
+          align-content:center;
+          appearance:none;
+          padding:20px;
           font-family: $font-titles;
-          color: $saj-light-grey;
-          @include font-size(14px);
-          
+          color:$saj-white;
+          background:transparent;
+          cursor:pointer;
         }
         &:hover{
-          button{
-              background: #000;
-              color:lighten($saj-blue, 20%);
-              }
-            }
+          background:$saj-black;
+        }
       }
     }
+
+    
 
 
 
