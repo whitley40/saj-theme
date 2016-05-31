@@ -77,24 +77,83 @@
 //single project page
 
 .single-project-page{
+  .constraint-content{
+    display:block;
+    max-width:1000px;
+    margin:0px auto;
+  }
   header{
     img{
       width:100%;
       height:auto;
-      border-radius:5px;
+      border-radius:5px 5px 0px 0px;
     }
   }
 }
 
-.project-logos{
-  padding:0px 40px 0px;
-  flex: 1 100%;
-  p{
+//slider
+
+.nemus-slider {
+  margin:0px 0px 15px!important;
+}
+
+//share buttons
+
+.jssocials-share-label{
+  font-family: $font-titles;
+    color:$saj-white;
+}
+
+.full-header-mobile {
+  display:flex;
+  flex:0 1 100%;
+  height:250px;
+  background-color:$saj-light-grey;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: bottom;
+    @include bp-medium {
+    display:none;
+    }
+}
+
+.full-header-desktop {
+  display:none;
+    @include bp-medium {
     display:flex;
-    flex-flow: row wrap;
-    flex: 1 100%;
-    padding:0px;
-    margin:0px;
+    flex:0 1 100%;
+    height:250px;
+    background-color:$saj-dark-grey;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: bottom;
+    }
+}
+
+.image-container{
+  display:flex;
+  flex-flow:column nowrap;
+}
+
+figure{
+  padding:10px;
+  border-radius:0px 0px 5px 5px;
+  font-family: $font-body;
+  color:$saj-dark-grey;
+  background:$saj-light-grey;
+}
+
+.project-logos{
+  padding:10px 40px 10px;
+  // flex: 1 100%;
+  p{
+    //display:flex;
+    //flex-flow: row wrap;
+    //flex: 1 100%;
+    //padding:0px;
+    //margin:0px;
   }
   img {
     max-width: 200px;
@@ -116,6 +175,7 @@
 }
 
 .project-intro{
+  padding-top:20px;
   flex-flow: column;
 }
 

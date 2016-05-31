@@ -22,7 +22,7 @@
 			<h1>Social Media</h1>
 			<ul>
 			<!-- <li><a class="icon-social-twitter" target="blank" href="https://twitter.com/Sajtransportcon"><span>Twitter</span></a></li> -->
-			<li><a class="icon-linkedin-square" target="blank" href="https://www.linkedin.com/company/s-a-j-transport-consultants"><span>Linked In</span></a></li>
+			<li><a class="icon-linkedin-square" target="blank" href="https://www.linkedin.com/company/s-a-j-transport-consultants"><span>LinkedIn</span></a></li>
 			</ul>
 		</section>
 

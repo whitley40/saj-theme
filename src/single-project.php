@@ -7,10 +7,11 @@
 
 <section class="main-content single-project-page">
 
+<div class="constraint-content">
+
 	<header>
 		 <h1><?php the_title(); ?></h1>
 		 <p><?php the_field('project-excerpt'); ?></p>
-		 <?php the_post_thumbnail('large'); ?>
 	</header>
 
 		<section class="project-intro">
@@ -23,17 +24,25 @@
 		</section>
 		<?php } ?>
 
+			<section class="project-share">
+			<?php the_field('project-share'); ?>
+		</section>
+
 
 	<section class="project-link-area">
 		<!-- <?php previous_post_link(); ?> add this in to link between projects-->
 		
 		<ul class="project-links">
-			<li><a class="main-cta" href="<?php bloginfo('url'); ?>/contact">Get in touch <span>&#9658;</span></a></li>
+			<!-- <li><a class="main-cta" href="<?php bloginfo('url'); ?>/contact">Get in touch <span>&#9658;</span></a></li> -->
 			<li><a class="secondary-cta" href="<?php bloginfo('url'); ?>/projects/">Back to projects </a></li>
 		</ul>
 		<!-- <?php next_post_link(); ?> add this in to link between projects-->
 
 	</section>
+
+
+
+	</div>
 
 
 </section>
